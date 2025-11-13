@@ -113,66 +113,67 @@ The current implementation supports:
 
 </div>
 
-```
-                           ┌─────────────────────────────────────────┐
-                           │        CONTROL UNIT (Arduino #1)        │
-                           │  - Loads A, B registers                 │
-                           │  - Sends FUNC[3:0], M, INV_OUT          │
-                           │  - Coordinates ADD/SUB/LOGIC ops        │
-                           │  - Handles MULTIPLY/DIVIDE sequencing   │
-                           │  - Generates LOAD pulses                │
-                           │  - Optional: 1 Hz for clock mode        │
-                           └─────────────────────────────────────────┘
-                                           │
-                            Control Lines  │
-      ┌────────────────────────────────────┴──────────────────────────────────┐
-      │                                                                        │
-┌────────────┐     Data Bus A      ┌────────────────────────┐     Data Bus B   ┌────────────┐
-│  A Input   │───(A_D[7:0])──────▶ │      A REGISTER        │                     B Input   │
-│ (Switches  │                     │     (74HC373/574)      │───────────────▶   (Switches   │
-│ or Arduino)│                     │   Holds Operand A       │                     or Arduino)│
-└────────────┘                     └────────────────────────┘                     └────────────┘
-                                           │ A_Q[7:0]                B_Q[7:0] │
-                                           ▼                                 ▼
-                                       ┌──────────────────────────────────────────┐
-                                       │                ALU CORE                  │
-                                       │──────────────────────────────────────────│
-                                       │  Arithmetic Unit (8-bit Ripple Adder)   │
-                                       │     - ADD, SUB                          │
-                                       │     - Uses M bit & XOR network          │
-                                       │                                          │
-                                       │  Logic Unit                              │
-                                       │     - NAND, NOR, XNOR                    │
-                                       │     - PASS A, PASS B                     │
-                                       │     - ZERO, ONE                          │
-                                       │                                          │
-                                       │  OPERATION SELECT                        │
-                                       │     - 74HC157 MUX (Arithmetic vs Logic) │
-                                       │                                          │
-                                       │  GLOBAL INVERTER                         │
-                                       │     - For AND/OR/XOR/NOT/etc.           │
-                                       │                                          │
-                                       │  Output Bus = ALU_OUT[7:0]              │
-                                       └──────────────────────────────────────────┘
-                                                      │
-                                                      ▼
-                                      ┌────────────────────────────────────┐
-                                      │         RESULT REGISTER (R)        │
-                                      │           (74HC373/574)            │
-                                      │    Stores the ALU Output (8-bit)    │
-                                      └────────────────────────────────────┘
-                                                      │
-                              ┌────────────────────────┴────────────────────────────┐
-                              │                                                     │
-                      ALU Output Bus                                       Debug/Display
-                              │                                                     │
-                              ▼                                                     ▼
-                    ┌──────────────────────┐                    ┌─────────────────────────────────┐
-                    │  Arduino #2 (Output)│                    │   LEDs / OLED / Serial Terminal │
-                    │ - Reads R register   │──────────────────▶│   - Shows A, B, Result          │
-                    │ - Formats/Displays   │                    │   - Shows FLAGS (Zero, Neg)    │
-                    └──────────────────────┘                    └─────────────────────────────────┘
-```
+<pre>
+                    ┌─────────────────────────────────────┐
+                    │  CONTROL UNIT (Arduino #1)         │
+                    │  - Loads A, B registers            │
+                    │  - Sends FUNC[3:0], M, INV_OUT     │
+                    │  - Coordinates ADD/SUB/LOGIC ops   │
+                    │  - Handles MUL/DIV sequencing      │
+                    │  - Generates LOAD pulses           │
+                    │  - Optional: 1 Hz clock mode       │
+                    └─────────────────────────────────────┘
+                                  │
+                       Control Lines │
+    ┌───────────────────────────────┴──────────────────────────────┐
+    │                                                               │
+┌─────────┐  A_D[7:0]  ┌──────────────┐  B_D[7:0]  ┌─────────┐
+│ A Input │───────────▶│ A REGISTER   │───────────▶│ B Input │
+│(Switches│            │ (74HC373/574)│            │(Switches│
+│or Arduino)           │ Holds Op A   │            │or Arduino)
+└─────────┘            └──────────────┘            └─────────┘
+                            │ A_Q[7:0]    B_Q[7:0] │
+                            ▼                      ▼
+                    ┌──────────────────────────────────┐
+                    │         ALU CORE                 │
+                    │──────────────────────────────────│
+                    │ Arithmetic Unit                  │
+                    │  - 8-bit Ripple Adder            │
+                    │  - ADD, SUB                      │
+                    │  - M bit & XOR network           │
+                    │                                  │
+                    │ Logic Unit                       │
+                    │  - NAND, NOR, XNOR               │
+                    │  - PASS A, PASS B                │
+                    │  - ZERO, ONE                     │
+                    │                                  │
+                    │ Operation Select                 │
+                    │  - 74HC157 MUX                   │
+                    │  - (Arithmetic vs Logic)         │
+                    │                                  │
+                    │ Global Inverter                  │
+                    │  - AND/OR/XOR/NOT/etc.           │
+                    │                                  │
+                    │ Output: ALU_OUT[7:0]             │
+                    └──────────────────────────────────┘
+                                  │
+                                  ▼
+                    ┌──────────────────────────────┐
+                    │  RESULT REGISTER (R)         │
+                    │  (74HC373/574)               │
+                    │  Stores ALU Output (8-bit)   │
+                    └──────────────────────────────┘
+                                  │
+                    ┌─────────────┴─────────────┐
+                    │                           │
+                    ▼                           ▼
+        ┌──────────────────┐      ┌──────────────────────────┐
+        │ Arduino #2       │      │ LEDs/OLED/Serial         │
+        │ (Output)         │─────▶│ - Shows A, B, Result     │
+        │ - Reads R reg    │      │ - Shows FLAGS            │
+        │ - Formats/Displays│      │   (Zero, Neg)           │
+        └──────────────────┘      └──────────────────────────┘
+</pre>
 
 ### The 5 Stages of Architecture
 
