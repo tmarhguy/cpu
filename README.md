@@ -4,23 +4,11 @@
 
 **Computer Engineering Project - Discrete Transistor ALU Design from First Principles**
 
-[![Computer Engineering](https://img.shields.io/badge/Computer-Engineering-blue.svg)](https://www.seas.upenn.edu/)
+[![Computer Engineering](https://img.shields.io/badge/Computer-Engineering-blue.svg)](https://www.seas.upenn.edu/) [![University](https://img.shields.io/badge/University-Penn%20Engineering-red.svg)](https://www.seas.upenn.edu/) [![Hardware](https://img.shields.io/badge/Hardware-Discrete%20Transistors-green.svg)](https://github.com/tmarhguy/cpu) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![KiCad](https://img.shields.io/badge/KiCad-314CB0?logo=kicad&logoColor=white)](https://www.kicad.org/)[![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white)](https://www.arduino.cc/)[![LTSpice](https://img.shields.io/badge/LTSpice-FF6B35?logo=analog&logoColor=white)](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
 
-[![University](https://img.shields.io/badge/University-Penn%20Engineering-red.svg)](https://www.seas.upenn.edu/)
+**Computer Engineering Project**
 
-[![Hardware](https://img.shields.io/badge/Hardware-Discrete%20Transistors-green.svg)](https://github.com/tmarhguy/cpu)
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-[![KiCad](https://img.shields.io/badge/KiCad-314CB0?logo=kicad&logoColor=white)](https://www.kicad.org/)
-
-[![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white)](https://www.arduino.cc/)
-
-[![LTSpice](https://img.shields.io/badge/LTSpice-FF6B35?logo=analog&logoColor=white)](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
-
-**Computer Engineering Project**  
-
-**University of Pennsylvania, School of Engineering and Applied Science**  
+**University of Pennsylvania, School of Engineering and Applied Science**
 
 **Computer Engineering - From Transistors to Systems**
 
@@ -61,14 +49,14 @@ I love our CS students, I love them, but if you can write binary code, it's beca
   - [ADD/SUB Implementation](#addsub-implementation)
   - [Control Unit](#control-unit)
 - [Key Design Decisions](#key-design-decisions)
-  - [2's Complement Subtraction](#2s-complement-subtraction)
+  - [2&#39;s Complement Subtraction](#2s-complement-subtraction)
   - [XOR Array vs. MUX Array](#xor-array-vs-mux-array)
 - [Transistor Cost Analysis](#transistor-cost-analysis)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Quick Start](#quick-start)
 - [Hardware Implementation](#hardware-implementation)
-- [Simulation & Testing](#simulation--testing)
+- [Simulation &amp; Testing](#simulation--testing)
 - [Future Work](#future-work)
 - [Contributing](#contributing)
 - [License](#license)
@@ -108,33 +96,6 @@ The current implementation supports:
 <tr>
 <td width="50%">
 
-**Arithmetic Operations**
-- **ADD**: $A + B$ (direct addition)
-- **SUB**: $A - B$ (2's complement subtraction)
-- Efficient XOR-based implementation
-
-**Architecture**
-- 8-bit ripple-carry adder
-- Modular 1-bit full adder design
-- Scalable to 16 operations via 4-bit control
-
-</td>
-<td width="50%">
-
-**Control System**
-- 4-bit opcode (FUNC[3:0])
-- Centralized control unit decoder
-- Future support for logical operations
-
-**Design Optimization**
-- Transistor cost analysis for all components
-- XOR-based subtraction (96T vs 138T MUX design)
-- Optimized carry generation circuits
-
-</td>
-</tr>
-</table>
-
 ### Hardware Features
 
 - **Discrete Transistor Implementation**: Built from individual MOSFETs
@@ -148,35 +109,157 @@ The current implementation supports:
 
 <div align="center">
 
-### High-Level Block Diagram
-
-```
-             A[7:0]   B[7:0]
-                |        |
-    FUNC[3:0]   |        |
-       |        |        |
-   +---v---+    |        |
-   | Control   +----v---v----+     +-------------+
-   |   Unit |   | Arithmetic  |---->|             |
-   +-------+   |    Unit     |  0  | 8-bit 2-to-1|
-       |       +-------------+     |     MUX     |---> ALU_Result[7:0]
-       |             |   |         |             |
-       +------------>|   +-------->|      1      |
-      (LogicSelect)  |  (ArithMode)  |             |
-                     |             +-------------+
-                     |                 ^
-                     v                 |
-               +-------------+         |
-               |  Logical    |         |
-               |    Unit     |---------+
-               +-------------+        (FinalMuxSelect)
-```
+### High-Level Block Diagram (Complete System)
 
 </div>
 
-### Datapath
+```
+                           ┌─────────────────────────────────────────┐
+                           │        CONTROL UNIT (Arduino #1)        │
+                           │  - Loads A, B registers                 │
+                           │  - Sends FUNC[3:0], M, INV_OUT          │
+                           │  - Coordinates ADD/SUB/LOGIC ops        │
+                           │  - Handles MULTIPLY/DIVIDE sequencing   │
+                           │  - Generates LOAD pulses                │
+                           │  - Optional: 1 Hz for clock mode        │
+                           └─────────────────────────────────────────┘
+                                           │
+                            Control Lines  │
+      ┌────────────────────────────────────┴──────────────────────────────────┐
+      │                                                                        │
+┌────────────┐     Data Bus A      ┌────────────────────────┐     Data Bus B   ┌────────────┐
+│  A Input   │───(A_D[7:0])──────▶ │      A REGISTER        │                     B Input   │
+│ (Switches  │                     │     (74HC373/574)      │───────────────▶   (Switches   │
+│ or Arduino)│                     │   Holds Operand A       │                     or Arduino)│
+└────────────┘                     └────────────────────────┘                     └────────────┘
+                                           │ A_Q[7:0]                B_Q[7:0] │
+                                           ▼                                 ▼
+                                       ┌──────────────────────────────────────────┐
+                                       │                ALU CORE                  │
+                                       │──────────────────────────────────────────│
+                                       │  Arithmetic Unit (8-bit Ripple Adder)   │
+                                       │     - ADD, SUB                          │
+                                       │     - Uses M bit & XOR network          │
+                                       │                                          │
+                                       │  Logic Unit                              │
+                                       │     - NAND, NOR, XNOR                    │
+                                       │     - PASS A, PASS B                     │
+                                       │     - ZERO, ONE                          │
+                                       │                                          │
+                                       │  OPERATION SELECT                        │
+                                       │     - 74HC157 MUX (Arithmetic vs Logic) │
+                                       │                                          │
+                                       │  GLOBAL INVERTER                         │
+                                       │     - For AND/OR/XOR/NOT/etc.           │
+                                       │                                          │
+                                       │  Output Bus = ALU_OUT[7:0]              │
+                                       └──────────────────────────────────────────┘
+                                                      │
+                                                      ▼
+                                      ┌────────────────────────────────────┐
+                                      │         RESULT REGISTER (R)        │
+                                      │           (74HC373/574)            │
+                                      │    Stores the ALU Output (8-bit)    │
+                                      └────────────────────────────────────┘
+                                                      │
+                              ┌────────────────────────┴────────────────────────────┐
+                              │                                                     │
+                      ALU Output Bus                                       Debug/Display
+                              │                                                     │
+                              ▼                                                     ▼
+                    ┌──────────────────────┐                    ┌─────────────────────────────────┐
+                    │  Arduino #2 (Output)│                    │   LEDs / OLED / Serial Terminal │
+                    │ - Reads R register   │──────────────────▶│   - Shows A, B, Result          │
+                    │ - Formats/Displays   │                    │   - Shows FLAGS (Zero, Neg)    │
+                    └──────────────────────┘                    └─────────────────────────────────┘
+```
 
-**Primary Datapath**: $A_{reg} (8b) \rightarrow ALU (arith + logic + mux + global invert) \rightarrow R_{reg} (8b)$
+### The 5 Stages of Architecture
+
+<table>
+<tr>
+<td width="50%">
+
+**Stage 1: Input (Human-Computer Interface)**
+- **Keypad Module**: High-level decimal input (e.g., "134")
+- **Toggle Module**: Low-level binary input (e.g., `10000110`)
+- Modular, swappable input methods
+
+**Stage 2: Control (Input Controller & Data Bus)**
+- **Arduino #1 (The Translator)**: Reads keypad, converts decimal to 8-bit binary
+- Places values on 8-bit Data Bus
+- **Load Buttons**: Manual `Load A` and `Load B` push-buttons send clock pulses
+
+</td>
+<td width="50%">
+
+**Stage 3: Storage (Registers)**
+- **Register A (74HC574)**: Latches 8-bit value from Data Bus when "Load A" pressed
+- **Register B (74HC574)**: Latches 8-bit value from Data Bus when "Load B" pressed
+- Outputs permanently feed the ALU
+
+**Stage 4: Execution (The "Crown Jewel")**
+- **640+ Transistor ALU**: Custom-built processor core
+- Takes 8-bit inputs from Register A and Register B
+- Opcode Select switches choose function (ADD, SUB, AND, PASS A, etc.)
+- **Output Register (74HC574)**: Latches and holds 8-bit result
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+**Stage 5: Display (Output Controller)**
+- **Arduino #2 (The Formatter)**: Reads stable 8-bit binary from Output Register
+- **LCD/OLED Screen**: Formats binary (e.g., `11000011`) into decimal ("195") and displays
+
+</td>
+</tr>
+</table>
+
+### ALU Core Architecture
+
+<table>
+<tr>
+<td width="50%">
+
+**Arithmetic Unit**
+- 8-bit ripple-carry adder
+- M (mode) bit selects ADD vs SUB
+- SUB uses `B XOR M`, carry-in = M
+- Standard CPU subtraction implementation
+
+**Logic Unit**
+- Built from CMOS primitives:
+  - NAND, NOR, XNOR
+  - PASS A, PASS B
+  - ZERO, ONE
+- Global invert enables:
+  - NAND → AND
+  - NOR → OR
+  - XNOR → XOR
+  - PASS A → NOT A
+  - ZERO → ONE
+
+</td>
+<td width="50%">
+
+**Operation Select (MUX)**
+- 2-to-1 mux (74HC157) chooses:
+  - Arithmetic output
+  - Logic output
+- Controlled by FUNC decoding (Arduino #1)
+
+**Global Inverter**
+- Post-mux inversion layer
+- Controlled by INV_OUT bit
+- Enables full 16-operation function table
+
+**Total Operations**: 16 ALU operations supported
+
+</td>
+</tr>
+</table>
 
 ### Control Signals
 
@@ -184,6 +267,10 @@ The current implementation supports:
 - **M**: ADD/SUB mode (0=ADD, 1=SUB)
 - **INV_OUT**: Global post-mux inversion bit
 - **LOAD_A, LOAD_B, LOAD_R**: Register load enables
+
+### Datapath
+
+**Primary Datapath**: $A_{reg} (8b) \rightarrow ALU (arith + logic + mux + global invert) \rightarrow R_{reg} (8b)$
 
 ---
 
@@ -195,57 +282,11 @@ The current implementation supports:
 <tr>
 <td width="50%">
 
-**Inputs**
-- A
-- B
-
-**Outputs**
-- Sum: $A \oplus B$
-- Carry-out: $A \cdot B$
-
-</td>
-<td width="50%">
-
-**Implementation**
-- AND gate for carry generation
-- XOR gate for sum calculation
-- Foundation for full adder design
-
-</td>
-</tr>
-</table>
-
 ### 1-Bit Full Adder
 
 <table>
 <tr>
 <td width="50%">
-
-**Inputs**
-- A
-- B
-- $C_{in}$
-
-**Outputs**
-- **Sum**: $A \oplus B \oplus C$
-- **Carry**: $AB + BC + AC$ (standard)
-- **Carry (optimized)**: $AB + C(A \oplus B)$
-
-</td>
-<td width="50%">
-
-**Design Cost**
-
-| Component | Cost |
-|-----------|------|
-| Standard Carry | $3 \cdot AND + 1 \cdot OR = 30T$ |
-| Optimized Carry | $2 \cdot AND + 1 \cdot OR + 1 \cdot XOR = 30T$ |
-| Sum | $3 \cdot XOR = 36T$ |
-| **Total** | **66T** |
-
-</td>
-</tr>
-</table>
 
 **Logic Derivation**: Boolean expressions derived using truth tables and Karnaugh maps, verified through simulation.
 
@@ -255,97 +296,17 @@ The current implementation supports:
 <tr>
 <td width="50%">
 
-**Structure**
-- 8× 1-bit full adders daisy-chained
-- Carry-out of bit $i$ → carry-in of bit $i+1$
-- Sequential propagation through all stages
-
-**Inputs**
-- 8-bit Input $A[7:0]$
-- 8-bit Input $B[7:0]$
-
-</td>
-<td width="50%">
-
-**Outputs**
-- 8-bit output $S[7:0]$
-- 1-bit carry (1 if overflow)
-- Final carry: $C_8$ or $C_{final}$
-
-**Implementation**
-- Modular black-box approach
-- Reusable 1-bit full adder design
-- Scalable architecture
-
-</td>
-</tr>
-</table>
-
 ### ADD/SUB Implementation
 
 <table>
 <tr>
 <td width="50%">
 
-**Operations**
-- **ADD**: $A + B$
-- **SUB**: $A - B = A + (-B)$ (2's complement)
-
-**Design Approach**
-- XOR-based implementation
-- Control signal feeds XOR gates:
-  - $B \oplus 0 = B$ (pass-through)
-  - $B \oplus 1 = \overline{B}$ (invert)
-
-</td>
-<td width="50%">
-
-**Control Signals**
-- **ADD**: `00000000` (8-bit)
-- **SUB**: `11111111` (8-bit)
-- Control bit (1-bit) feeds ALU as $C_{in}$ to complete 2's complement
-
-**Cost Comparison**
-- XOR design: $8 \cdot 12 = 96T$
-- MUX design: $138T$
-- **Savings**: $42T$ (30% reduction)
-
-</td>
-</tr>
-</table>
-
 ### Control Unit
 
 <table>
 <tr>
 <td width="50%">
-
-**Input**
-- 4-bit control signal (FUNC[3:0])
-- Allows $2^{4} = 16$ possible operations
-
-**Outputs**
-- 1-bit to adder (as $C_{in}$)
-- 8-bit signal of 1s or 0s to XOR gates
-- Logic select signals (future)
-- Final mux select (future)
-
-</td>
-<td width="50%">
-
-**Purpose**
-- Decode opcodes to internal control signals
-- Coordinate ALU operations
-- Enable future operation expansion
-
-**Future Operations**
-- Currently: ADD, SUB
-- Planned: MUL, DIV
-- Logical operations: AND, OR, NAND, NOR, XOR, XNOR
-
-</td>
-</tr>
-</table>
 
 ---
 
@@ -358,6 +319,7 @@ The current implementation supports:
 **Solution**: Implement 2's complement arithmetic, where $-B = \overline{B} + 1$.
 
 This approach allows reuse of the entire 8-bit adder by:
+
 1. Inverting the $B$ input (to get $\overline{B}$)
 2. Setting the initial carry-in ($C_{in}$ of the first adder) to $1$ (to perform the $+ 1$)
 
@@ -368,25 +330,6 @@ This approach allows reuse of the entire 8-bit adder by:
 <table>
 <tr>
 <td width="50%">
-
-**MUX-Based Approach (Considered)**
-- 8-bit 2-to-1 MUX array
-- Separate control signal for $C_{in}$
-- **Cost**: ~138T
-- More complex control logic
-
-</td>
-<td width="50%">
-
-**XOR-Based Approach (Implemented)**
-- 8 XOR gates as conditional inverters
-- Single control signal handles both inversion and $C_{in}$
-- **Cost**: $8 \cdot 12 = 96T$
-- Elegant and efficient solution
-
-</td>
-</tr>
-</table>
 
 **The Insight**: The same control signal used to select inversion (1 for SUB) can be wired directly to the $C_{in}$ of the first adder, elegantly handling both parts of the 2's complement operation simultaneously.
 
@@ -401,14 +344,14 @@ This approach allows reuse of the entire 8-bit adder by:
 ### Gate Costs
 
 | Gate | Transistor Count |
-|------|------------------|
-| NOT | 2T |
-| NOR | 4T |
-| NAND | 4T |
-| OR | 6T |
-| AND | 6T |
-| XOR | 12T |
-| XNOR | 12T |
+| ---- | ---------------- |
+| NOT  | 2T               |
+| NOR  | 4T               |
+| NAND | 4T               |
+| OR   | 6T               |
+| AND  | 6T               |
+| XOR  | 12T              |
+| XNOR | 12T              |
 
 </div>
 
@@ -417,31 +360,6 @@ This approach allows reuse of the entire 8-bit adder by:
 <table>
 <tr>
 <td width="50%">
-
-**1-Bit Full Adder**
-- Sum: $A \oplus B \oplus C$ = 36T
-- Carry (optimized): $AB + C(A \oplus B)$ = 30T
-- **Total**: **66T**
-
-**8-Bit Adder**
-- 8 × 66T = 528T (core adder)
-- Additional routing and buffering
-
-</td>
-<td width="50%">
-
-**B-Inversion Logic (8-bit)**
-- MUX-based design: ~138T
-- XOR-based design: $8 \times 12 = 96T$
-- **Savings**: 42T (30% reduction)
-
-**Design Principles**
-- Best design: $(n-1)$ MOSFETs for $n$ input
-- $n$-AND = $(n-1)$ NAND + $n$-OR = $(n-1)$ OR NOT
-
-</td>
-</tr>
-</table>
 
 This analysis clearly justifies the selection of the XOR-based design for subtraction.
 
@@ -515,19 +433,16 @@ cpu/
    git clone https://github.com/tmarhguy/cpu.git
    cd cpu
    ```
-
 2. **Review the design documentation:**
 
    - [Architecture Overview](docs/architecture_overview.md)
    - [ALU Design Notes](alu_design.md)
    - [Opcode Map](docs/opcodes.md)
-
 3. **Explore the hardware design:**
 
    - Navigate to `hardware/` for component designs
    - Check `schematics/kicad/` for KiCad projects
    - Review `schematics/ltspice/` for simulations
-
 4. **Set up firmware:**
 
    - Open `firmware/controller-input/` in Arduino IDE
@@ -620,21 +535,17 @@ We welcome contributions! Here's how to get started:
 ### Quick Contribution Guide
 
 1. **Fork the repository**
-
 2. **Create a feature branch:**
 
    ```bash
    git checkout -b feature/amazing-feature
    ```
-
 3. **Make your changes and test thoroughly**
-
 4. **Commit with conventional commits:**
 
    ```bash
    git commit -m "feat: add amazing new feature"
    ```
-
 5. **Push to your fork and create a Pull Request**
 
 ### Development Setup
@@ -677,7 +588,7 @@ See [LICENSE](LICENSE) for details.
 
 ### Academic Context
 
-**University of Pennsylvania, School of Engineering and Applied Science**  
+**University of Pennsylvania, School of Engineering and Applied Science**
 **Computer Engineering Program**
 
 This project represents a comprehensive exploration of digital logic design, from transistor-level implementation to system-level architecture.
@@ -706,9 +617,9 @@ This project represents a comprehensive exploration of digital logic design, fro
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tmarhguy)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tmarhguy@seas.upenn.edu)
 
-**Student:** Tyrone Marhguy  
-**University Email:** tmarhguy@seas.upenn.edu  
-**University:** University of Pennsylvania, School of Engineering and Applied Science  
+**Student:** Tyrone Marhguy
+**University Email:** tmarhguy@seas.upenn.edu
+**University:** University of Pennsylvania, School of Engineering and Applied Science
 **Major:** Computer Engineering
 
 ---
