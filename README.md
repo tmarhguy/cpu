@@ -4,19 +4,8 @@
 
 **Computer Engineering Project - Discrete Transistor ALU Design from First Principles**
 
-[![Computer Engineering](https://img.shields.io/badge/Computer-Engineering-blue.svg)](https://www.seas.upenn.edu/)
-
-[![University](https://img.shields.io/badge/University-Penn%20Engineering-red.svg)](https://www.seas.upenn.edu/)
-
-[![Hardware](https://img.shields.io/badge/Hardware-Discrete%20Transistors-green.svg)](https://github.com/tmarhguy/cpu)
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-[![KiCad](https://img.shields.io/badge/KiCad-314CB0?logo=kicad&logoColor=white)](https://www.kicad.org/)
-
-[![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white)](https://www.arduino.cc/)
-
-[![LTSpice](https://img.shields.io/badge/LTSpice-FF6B35?logo=analog&logoColor=white)](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
+[![Computer Engineering](https://img.shields.io/badge/Computer-Engineering-blue.svg)](https://www.seas.upenn.edu/) [![University](https://img.shields.io/badge/University-Penn%20Engineering-red.svg)](https://www.seas.upenn.edu/) [![Hardware](https://img.shields.io/badge/Hardware-Discrete%20Transistors-green.svg)](https://github.com/tmarhguy/cpu) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![KiCad](https://img.shields.io/badge/KiCad-314CB0?logo=kicad&logoColor=white)](https://www.kicad.org/) [![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white)](https://www.arduino.cc/) [![LTSpice](https://img.shields.io/badge/LTSpice-FF6B35?logo=analog&logoColor=white)](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
 
 **Computer Engineering Project**  
 
