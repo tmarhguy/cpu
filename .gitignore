@@ -1,0 +1,79 @@
+# Build artifacts
+*.o
+*.elf
+*.hex
+*.bin
+*.map
+
+# KiCad
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_pro-bak
+*.kicad_wks-bak
+*.kicad_dru
+*.kicad_prl
+*.kicad_wks
+*.net
+*.pro
+*.sch
+*.pcb
+*.kicad_mod
+*.pretty/
+*.3dshapes/
+*.cache/
+*.lib-cache
+
+# Gerber files (keep in gerbers/ but ignore temp files)
+*.gbr
+*.drl
+*.gko
+*.gbl
+*.gbs
+*.gbo
+*.gtl
+*.gts
+*.gtp
+*.gto
+*.gm1
+*.gpt
+*.gpb
+
+# LTSpice
+*.raw
+*.log
+*.net
+*.plt
+
+# Arduino
+*.hex
+build/
+*.elf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation builds
+*.aux
+*.log
+*.out
+*.toc
+*.pdf
+*.synctex.gz
+
+# Media (keep structure but ignore large files - uncomment if needed)
+# *.mp4
+# *.mov
+# *.avi
+
+# Test outputs
+test_results/
+*.csv
+
