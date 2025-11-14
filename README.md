@@ -56,6 +56,7 @@ I love our CS students, I love them, but if you can write binary code, it's beca
 - [Project Structure](#project-structure)
 - [Quick Start](#quick-start)
 - [Hardware Implementation](#hardware-implementation)
+  - [Input System: 26-Key to 5-Bit Encoder](#input-system-26-key-to-5-bit-encoder)
 - [Simulation &amp; Testing](#simulation--testing)
 - [Future Work](#future-work)
 - [Contributing](#contributing)
@@ -477,6 +478,76 @@ Key components (see [full BOM](docs/bom.md)):
 - **Front-end Arduino**: Keypad input → number entry + opcode selection
 - **Back-end Arduino**: Display/logging → reads R_reg and displays results
 - **Direct I/O**: 5V logic levels, direct digital I/O connections
+
+### Input System: 26-Key to 5-Bit Encoder
+
+To support a 26-key human input interface (0–9 digits plus ~16 operation keys), the input system needs a compact way to represent each key as a digital code. Because 26 unique values require at least 5 bits to represent (since $2^5 = 32$), the CPU's input controller uses a **5-bit key code** for all keypad and operation inputs.
+
+There are several ways to implement this encoding, each with dramatically different hardware costs. The most efficient approaches avoid unnecessary transistor usage and let the Arduino handle decoding and sequencing.
+
+#### Encoding Requirements
+
+- **Total keys**: 26
+- **Minimum bits required**: 5 bits (since $2^5 = 32$)
+- **Single key press**: Only one key is pressed at a time, so no conflict resolution is needed
+- **Arduino interface**: Requires a stable 5-bit code and optional key-valid strobe
+
+#### Option A: Passive Diode Encoding (Recommended, Zero Transistors)
+
+The simplest and most hardware-efficient design uses a **diode matrix encoder**. This approach requires no logic ICs and no transistors. Each key is assigned a unique 5-bit code. Every output bit line is held high by a pull-up resistor. When a particular key is pressed, that key grounds the output lines corresponding to the "0" bits of its code.
+
+This technique was historically used in early keyboards and input panels. It is reliable, cheap, and extremely low-power. It also avoids adding hundreds of unnecessary CMOS gates to the project.
+
+**Hardware cost:**
+- **Transistors**: 0
+- **Components**: Only diodes, switches, and pull-up resistors
+
+This is the preferred option for a transistor-budgeted CPU.
+
+#### Option B: Matrix Scanning in the Arduino (Also Zero Transistors)
+
+Another transistor-free option removes the encoder hardware entirely and lets the Arduino decode keys in software. The 26 keys are arranged in a small matrix (for example, 5 rows by 6 columns). The Arduino drives each row in sequence and reads the column state to detect a pressed key.
+
+Once the Arduino identifies the key, it simply **outputs the correct 5-bit code** onto the shared data bus.
+
+This method is extremely flexible, easy to wire, and eliminates the need for any hardware encoder logic.
+
+**Hardware cost:**
+- **Transistors**: 0
+- The Arduino handles all decoding internally
+
+#### Option C: Pure CMOS Logic Encoder (Not Recommended)
+
+It is possible to build a true hardware encoder for 26 inputs using discrete transistors arranged in CMOS NOR/NAND/OR networks. However, such a design is **not practical** for a discrete-transistor CPU.
+
+A rough estimate of the transistor cost:
+- Each output bit requires a multi-input OR/NOR network combining ~13 input lines
+- A 13-input OR built from 2-input gates requires a tree of approximately 12 OR gates
+- Each 2-input CMOS OR gate costs about 6 transistors
+- That means roughly 70 transistors per output bit
+- With 5 output bits, the total rises to **200–400 transistors** depending on optimization
+
+This would consume almost half the transistor budget used for the entire ALU, purely to implement a keypad encoder. For a project where transistor minimization is a central design theme, this approach is unjustifiable.
+
+**Hardware cost:**
+- **Hundreds of transistors**
+- No functional advantage over the simpler methods above
+
+#### Recommended Solution
+
+For a discrete-transistor CPU, the correct engineering approach is to **avoid active logic encoding** and use one of the zero-transistor methods:
+
+1. **Diode matrix encoder** (best if you want hardware-native codes)
+2. **Arduino matrix scanning** (best if you want flexibility and easier wiring)
+
+Both are completely compatible with the design where:
+- The Arduino receives a stable 5-bit code for each keypress
+- The Arduino outputs:
+  - The 8-bit operand bus (via time-multiplexing)
+  - The 5-bit opcode value
+  - Control lines such as LOAD_A, LOAD_B, LOAD_R, M, INV_OUT, etc.
+
+This keeps the input system clean, efficient, and consistent with the project's core philosophy: **building the CPU from discrete transistors where they matter (the ALU and datapath), not where they don't.**
 
 ---
 
