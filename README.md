@@ -485,12 +485,42 @@ To support a 26-key human input interface (0–9 digits plus ~16 operation keys)
 
 There are several ways to implement this encoding, each with dramatically different hardware costs. The most efficient approaches avoid unnecessary transistor usage and let the Arduino handle decoding and sequencing.
 
+#### Matrix Keypad Architecture (5×6 → 30 Keys)
+
+The input system uses a **5-row by 6-column matrix**, providing **30 distinct key positions** while requiring only **11 electrical lines** (5 row drivers + 6 column readers). Each key acts as a simple switch connecting one row line to one column line, allowing efficient scanning without the need for a discrete transistor-level encoder.
+
+**Reason for choosing a matrix over a 32→5 encoder**: A direct 26–32 line encoder would be electrically impractical at the discrete transistor level and would exceed the project's reasonable transistor budget. A matrix reduces wiring complexity, avoids massive fan-in logic, and mirrors how real keyboards, calculators, and embedded systems implement key input.
+
 #### Encoding Requirements
 
-- **Total keys**: 26
-- **Minimum bits required**: 5 bits (since $2^5 = 32$)
+- **Total keys**: 26 (with 4 spare positions in the 5×6 matrix)
+- **Matrix size**: 5 rows × 6 columns = 30 key positions
+- **Electrical lines**: 11 lines (5 row drivers + 6 column readers)
+- **Minimum bits required**: 5 bits (since $2^5 = 32$, sufficient for 30 keys)
 - **Single key press**: Only one key is pressed at a time, so no conflict resolution is needed
 - **Arduino interface**: Requires a stable 5-bit code and optional key-valid strobe
+
+#### Scanning Method
+
+The microcontroller drives **one row HIGH at a time** while monitoring all column lines. If a key in the active row is pressed, the corresponding column line becomes active. By iterating through the five rows, the system uniquely identifies which key (row, column) was pressed.
+
+**Key indexing strategy**: Each key position is mapped to a unique integer using:
+
+$$\text{key\_index} = \text{row} \times 6 + \text{column}$$
+
+This produces a range of **0–29**, allowing all keys to be represented using a **5-bit binary code**. These 5 bits form the compact encoded output that will be fed into the CPU's input latch or control interface.
+
+#### Role of the Arduino Front-End
+
+The Arduino is responsible for:
+
+- Driving row-selection signals (one row active at a time)
+- Reading column signals
+- Identifying the active key position
+- Converting the (row, column) pair into a **5-bit encoded value**
+- Outputting this value to the discrete transistor CPU input bus
+
+This approach offloads the complexity of keypad scanning and encoding to the microcontroller while keeping the ALU and CPU datapath fully discrete and transistor-authentic.
 
 #### Option A: Passive Diode Encoding (Recommended, Zero Transistors)
 
@@ -533,21 +563,32 @@ This would consume almost half the transistor budget used for the entire ALU, pu
 - **Hundreds of transistors**
 - No functional advantage over the simpler methods above
 
-#### Recommended Solution
+#### Recommended Solution: Matrix Scanning with Arduino
 
-For a discrete-transistor CPU, the correct engineering approach is to **avoid active logic encoding** and use one of the zero-transistor methods:
+For a discrete-transistor CPU, the correct engineering approach is to **avoid active logic encoding** and use **Arduino matrix scanning**. This method:
 
-1. **Diode matrix encoder** (best if you want hardware-native codes)
-2. **Arduino matrix scanning** (best if you want flexibility and easier wiring)
+- **Minimizes wiring**: 11 lines instead of 30+ individual key lines
+- **Eliminates transistor cost**: No need for multi-hundred transistor encoders
+- **Clean separation**: Distinguishes between "human interface" and "transistor CPU core"
+- **Fully scalable**: Easy to add additional keys or control modes
+- **Real-world practice**: Matches how real keyboards, calculators, and embedded systems work
 
-Both are completely compatible with the design where:
-- The Arduino receives a stable 5-bit code for each keypress
+The Arduino matrix scanning approach is completely compatible with the design where:
+- The Arduino scans the matrix and generates a stable 5-bit code for each keypress
 - The Arduino outputs:
   - The 8-bit operand bus (via time-multiplexing)
   - The 5-bit opcode value
   - Control lines such as LOAD_A, LOAD_B, LOAD_R, M, INV_OUT, etc.
 
 This keeps the input system clean, efficient, and consistent with the project's core philosophy: **building the CPU from discrete transistors where they matter (the ALU and datapath), not where they don't.**
+
+#### Advantages for the CPU Project
+
+- **Minimal wiring**: 11 lines instead of 30+ individual key connections
+- **Zero transistor cost**: No need for multi-hundred transistor encoders
+- **Clean separation**: Clear distinction between "human interface" and "transistor CPU core"
+- **Fully scalable**: Easy to add additional keys or control modes if needed
+- **Industry standard**: Matches real-world embedded design practices
 
 ---
 
