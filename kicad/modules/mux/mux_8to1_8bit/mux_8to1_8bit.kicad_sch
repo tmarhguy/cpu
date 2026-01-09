@@ -2137,7 +2137,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../mux_4to1_8bit/mux_4to1_8bit.kicad_sch"
+		(property "Sheetfile" "../../modules/mux/mux_4to1_8bit/mux_4to1_8bit.kicad_sch"
 			(at 52.07 175.8446 0)
 			(effects
 				(font
@@ -2573,6 +2573,16 @@
 					(page "3")
 				)
 			)
+			(project ""
+				(path "/18b29530-70df-469e-af7f-bd82f36b8ceb"
+					(page "")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/18b29530-70df-469e-af7f-bd82f36b8ceb"
+					(page "19")
+				)
+			)
 		)
 	)
 	(sheet
@@ -2600,7 +2610,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../mux_2to1_8bit/mux_2to1_8bit.kicad_sch"
+		(property "Sheetfile" "../../modules/mux/mux_2to1_8bit/mux_2to1_8bit.kicad_sch"
 			(at 160.02 125.6796 0)
 			(effects
 				(font
@@ -2866,6 +2876,16 @@
 					(page "4")
 				)
 			)
+			(project ""
+				(path "/18b29530-70df-469e-af7f-bd82f36b8ceb"
+					(page "")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/18b29530-70df-469e-af7f-bd82f36b8ceb"
+					(page "21")
+				)
+			)
 		)
 	)
 	(sheet
@@ -2893,7 +2913,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../mux_4to1_8bit/mux_4to1_8bit.kicad_sch"
+		(property "Sheetfile" "../../modules/mux/mux_4to1_8bit/mux_4to1_8bit.kicad_sch"
 			(at 52.07 90.7546 0)
 			(effects
 				(font
@@ -3329,12 +3349,16 @@
 					(page "2")
 				)
 			)
+			(project ""
+				(path "/18b29530-70df-469e-af7f-bd82f36b8ceb"
+					(page "")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/18b29530-70df-469e-af7f-bd82f36b8ceb"
+					(page "18")
+				)
+			)
 		)
 	)
-	(sheet_instances
-		(path "/"
-			(page "1")
-		)
-	)
-	(embedded_fonts no)
 )

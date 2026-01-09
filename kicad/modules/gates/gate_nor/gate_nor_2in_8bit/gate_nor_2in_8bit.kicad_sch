@@ -994,7 +994,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
 			(at 62.23 84.4046 0)
 			(effects
 				(font
@@ -1040,6 +1040,16 @@
 					(page "5")
 				)
 			)
+			(project ""
+				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "13")
+				)
+			)
 		)
 	)
 	(sheet
@@ -1067,7 +1077,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
 			(at 62.23 132.6646 0)
 			(effects
 				(font
@@ -1113,6 +1123,16 @@
 					(page "8")
 				)
 			)
+			(project ""
+				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "16")
+				)
+			)
 		)
 	)
 	(sheet
@@ -1140,7 +1160,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
 			(at 62.23 149.1746 0)
 			(effects
 				(font
@@ -1186,6 +1206,16 @@
 					(page "9")
 				)
 			)
+			(project ""
+				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "17")
+				)
+			)
 		)
 	)
 	(sheet
@@ -1213,7 +1243,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
 			(at 62.23 117.4246 0)
 			(effects
 				(font
@@ -1259,6 +1289,16 @@
 					(page "7")
 				)
 			)
+			(project ""
+				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "15")
+				)
+			)
 		)
 	)
 	(sheet
@@ -1286,7 +1326,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
 			(at 62.23 34.8746 0)
 			(effects
 				(font
@@ -1332,6 +1372,16 @@
 					(page "2")
 				)
 			)
+			(project ""
+				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "10")
+				)
+			)
 		)
 	)
 	(sheet
@@ -1359,7 +1409,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
 			(at 62.23 51.3846 0)
 			(effects
 				(font
@@ -1405,6 +1455,16 @@
 					(page "3")
 				)
 			)
+			(project ""
+				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "11")
+				)
+			)
 		)
 	)
 	(sheet
@@ -1432,7 +1492,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
 			(at 62.23 100.9146 0)
 			(effects
 				(font
@@ -1478,6 +1538,16 @@
 					(page "6")
 				)
 			)
+			(project ""
+				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "14")
+				)
+			)
 		)
 	)
 	(sheet
@@ -1505,7 +1575,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
 			(at 62.23 67.8946 0)
 			(effects
 				(font
@@ -1551,12 +1621,16 @@
 					(page "4")
 				)
 			)
+			(project ""
+				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
+					(page "12")
+				)
+			)
 		)
 	)
-	(sheet_instances
-		(path "/"
-			(page "1")
-		)
-	)
-	(embedded_fonts no)
 )
