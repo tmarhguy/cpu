@@ -1,0 +1,76 @@
+================================================================================
+COMPONENT ANALYSIS - ALU TOP CIRCUIT
+================================================================================
+
+GATES:
+--------------------------------------------------------------------------------
+  AND Gate:
+    AND Gate (2-input, 1-bit): 10
+    AND Gate (3-input, 1-bit): 1
+    AND Gate (4-input, 1-bit): 19
+    Subtotal: 30
+
+  NAND Gate:
+    NAND Gate (2-input, 8-bit): 1
+    Subtotal: 1
+
+  NOR Gate:
+    NOR Gate (2-input, 1-bit): 1
+    NOR Gate (2-input, 8-bit): 1
+    NOR Gate (8-input, 1-bit): 1
+    Subtotal: 3
+
+  NOT Gate:
+    NOT Gate (1-bit): 40
+    NOT Gate (8-bit): 1
+    Subtotal: 41
+
+  OR Gate:
+    OR Gate (2-input, 1-bit): 7
+    OR Gate (3-input, 1-bit): 1
+    Subtotal: 8
+
+  XOR Gate:
+    XOR Gate (2-input, 8-bit): 3
+    Subtotal: 3
+
+
+MULTIPLEXERS:
+--------------------------------------------------------------------------------
+  Multiplexer
+    2:1 MUX, select=1, width=8: 2
+    4:1 MUX, select=2, width=8: 3
+    8:1 MUX, select=3, width=8: 1
+
+
+OTHER COMPONENTS:
+--------------------------------------------------------------------------------
+  Adder (width=1): 1
+  Bit Extender: 2
+  Clock: 1
+  Constant (width=8): 2
+  Counter (width=5): 1
+  LED: 20
+  Pin: 7
+  Pin (width=2): 1
+  Pin (width=8): 13
+  Splitter: 3
+  Splitter (fanout=3) (incoming=3): 2
+  Splitter (fanout=4) (incoming=4): 22
+  Splitter (fanout=5) (incoming=5): 10
+  Splitter (fanout=8) (incoming=8): 10
+  Text: 2
+  Tunnel: 67
+  Tunnel (width=2): 3
+  Tunnel (width=3): 3
+  Tunnel (width=5): 11
+  Tunnel (width=8): 42
+
+================================================================================
+
+SUMMARY:
+--------------------------------------------------------------------------------
+Total Gates: 86
+Total Multiplexers: 6
+Total Other Components: 223
+Grand Total: 315
