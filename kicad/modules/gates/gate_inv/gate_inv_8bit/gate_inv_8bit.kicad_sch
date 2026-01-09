@@ -526,7 +526,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
 			(at 41.91 57.7346 0)
 			(effects
 				(font
@@ -562,6 +562,21 @@
 					(page "4")
 				)
 			)
+			(project ""
+				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "24")
+				)
+			)
+			(project ""
+				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
+					(page "")
+				)
+			)
 		)
 	)
 	(sheet
@@ -589,7 +604,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
 			(at 41.91 121.2346 0)
 			(effects
 				(font
@@ -625,6 +640,21 @@
 					(page "9")
 				)
 			)
+			(project ""
+				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "30")
+				)
+			)
+			(project ""
+				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
+					(page "")
+				)
+			)
 		)
 	)
 	(sheet
@@ -652,7 +682,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
 			(at 41.91 95.8346 0)
 			(effects
 				(font
@@ -688,6 +718,21 @@
 					(page "7")
 				)
 			)
+			(project ""
+				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "28")
+				)
+			)
+			(project ""
+				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
+					(page "")
+				)
+			)
 		)
 	)
 	(sheet
@@ -715,7 +760,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
 			(at 41.91 32.3346 0)
 			(effects
 				(font
@@ -751,6 +796,21 @@
 					(page "2")
 				)
 			)
+			(project ""
+				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "22")
+				)
+			)
+			(project ""
+				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
+					(page "")
+				)
+			)
 		)
 	)
 	(sheet
@@ -778,7 +838,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
 			(at 41.91 70.4346 0)
 			(effects
 				(font
@@ -814,6 +874,21 @@
 					(page "5")
 				)
 			)
+			(project ""
+				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "26")
+				)
+			)
+			(project ""
+				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
+					(page "")
+				)
+			)
 		)
 	)
 	(sheet
@@ -841,7 +916,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
 			(at 41.91 45.0346 0)
 			(effects
 				(font
@@ -877,6 +952,21 @@
 					(page "3")
 				)
 			)
+			(project ""
+				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "23")
+				)
+			)
+			(project ""
+				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
+					(page "")
+				)
+			)
 		)
 	)
 	(sheet
@@ -904,7 +994,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
 			(at 41.91 83.1346 0)
 			(effects
 				(font
@@ -940,6 +1030,21 @@
 					(page "6")
 				)
 			)
+			(project ""
+				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "27")
+				)
+			)
+			(project ""
+				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
+					(page "")
+				)
+			)
 		)
 	)
 	(sheet
@@ -967,7 +1072,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
 			(at 41.91 108.5346 0)
 			(effects
 				(font
@@ -1003,12 +1108,21 @@
 					(page "8")
 				)
 			)
+			(project ""
+				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
+					(page "29")
+				)
+			)
+			(project ""
+				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
+					(page "")
+				)
+			)
 		)
 	)
-	(sheet_instances
-		(path "/"
-			(page "1")
-		)
-	)
-	(embedded_fonts no)
 )

@@ -534,7 +534,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
 			(at 34.29 50.1146 0)
 			(effects
 				(font
@@ -580,6 +580,16 @@
 					(page "3")
 				)
 			)
+			(project ""
+				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "3")
+				)
+			)
 		)
 	)
 	(sheet
@@ -607,7 +617,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
 			(at 34.29 132.6646 0)
 			(effects
 				(font
@@ -653,6 +663,16 @@
 					(page "8")
 				)
 			)
+			(project ""
+				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "8")
+				)
+			)
 		)
 	)
 	(sheet
@@ -680,7 +700,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
 			(at 34.29 116.1546 0)
 			(effects
 				(font
@@ -726,6 +746,16 @@
 					(page "7")
 				)
 			)
+			(project ""
+				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "7")
+				)
+			)
 		)
 	)
 	(sheet
@@ -753,7 +783,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
 			(at 34.29 83.1346 0)
 			(effects
 				(font
@@ -799,6 +829,16 @@
 					(page "5")
 				)
 			)
+			(project ""
+				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "5")
+				)
+			)
 		)
 	)
 	(sheet
@@ -826,7 +866,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
 			(at 34.29 149.1746 0)
 			(effects
 				(font
@@ -872,6 +912,16 @@
 					(page "9")
 				)
 			)
+			(project ""
+				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "9")
+				)
+			)
 		)
 	)
 	(sheet
@@ -899,7 +949,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
 			(at 34.29 99.6446 0)
 			(effects
 				(font
@@ -945,6 +995,16 @@
 					(page "6")
 				)
 			)
+			(project ""
+				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "6")
+				)
+			)
 		)
 	)
 	(sheet
@@ -972,7 +1032,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
 			(at 34.29 66.6246 0)
 			(effects
 				(font
@@ -1018,6 +1078,16 @@
 					(page "4")
 				)
 			)
+			(project ""
+				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "4")
+				)
+			)
 		)
 	)
 	(sheet
@@ -1045,7 +1115,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
+		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
 			(at 34.29 33.6046 0)
 			(effects
 				(font
@@ -1091,12 +1161,16 @@
 					(page "2")
 				)
 			)
+			(project ""
+				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "#")
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
+					(page "2")
+				)
+			)
 		)
 	)
-	(sheet_instances
-		(path "/"
-			(page "1")
-		)
-	)
-	(embedded_fonts no)
 )

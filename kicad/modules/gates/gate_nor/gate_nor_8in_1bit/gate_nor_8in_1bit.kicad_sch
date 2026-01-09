@@ -1390,6 +1390,12 @@
 		)
 		(instances
 			(project ""
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+			(project ""
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "#PWR0107")
 					(unit 1)
@@ -1491,6 +1497,12 @@
 		)
 		(instances
 			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q102")
+					(unit 1)
+				)
+			)
+			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q102")
 					(unit 1)
@@ -1556,6 +1568,12 @@
 			(uuid "0f5b914d-945a-4c06-9173-9f2bb391131f")
 		)
 		(instances
+			(project ""
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "#PWR0104")
@@ -1623,6 +1641,12 @@
 		)
 		(instances
 			(project ""
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+			(project ""
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "#PWR0108")
 					(unit 1)
@@ -1689,6 +1713,12 @@
 		)
 		(instances
 			(project ""
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+			(project ""
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "#PWR0101")
 					(unit 1)
@@ -1754,6 +1784,12 @@
 			(uuid "db710471-88a0-4f84-a2c0-4faae2d16cc7")
 		)
 		(instances
+			(project ""
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "#PWR0109")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "#PWR0109")
@@ -1855,6 +1891,12 @@
 		)
 		(instances
 			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q114")
+					(unit 1)
+				)
+			)
+			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q114")
 					(unit 1)
@@ -1955,6 +1997,12 @@
 		)
 		(instances
 			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q110")
+					(unit 1)
+				)
+			)
+			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q110")
 					(unit 1)
@@ -2020,6 +2068,12 @@
 			(uuid "63199ad3-a187-48c2-96a9-37c007c9c618")
 		)
 		(instances
+			(project ""
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "#PWR0106")
@@ -2122,6 +2176,12 @@
 		)
 		(instances
 			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q108")
+					(unit 1)
+				)
+			)
+			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q108")
 					(unit 1)
@@ -2221,6 +2281,12 @@
 			(uuid "511f2d18-2f18-4157-a82a-d2def016ecf8")
 		)
 		(instances
+			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q112")
+					(unit 1)
+				)
+			)
 			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q112")
@@ -2323,6 +2389,12 @@
 		)
 		(instances
 			(project ""
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q101")
+					(unit 1)
+				)
+			)
+			(project ""
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q101")
 					(unit 1)
@@ -2424,6 +2496,12 @@
 		)
 		(instances
 			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q104")
+					(unit 1)
+				)
+			)
+			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q104")
 					(unit 1)
@@ -2489,6 +2567,12 @@
 			(uuid "4389753d-502b-47fa-a277-8bab6e9384ad")
 		)
 		(instances
+			(project ""
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "#PWR0105")
@@ -2589,6 +2673,12 @@
 			(uuid "59e29e99-8202-4cf3-a217-d214026606f1")
 		)
 		(instances
+			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q116")
+					(unit 1)
+				)
+			)
 			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q116")
@@ -2691,6 +2781,12 @@
 		)
 		(instances
 			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q103")
+					(unit 1)
+				)
+			)
+			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q103")
 					(unit 1)
@@ -2790,6 +2886,12 @@
 			(uuid "425a4e27-abc8-4440-90ea-3ee10a6c4b9a")
 		)
 		(instances
+			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q115")
+					(unit 1)
+				)
+			)
 			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q115")
@@ -2892,6 +2994,12 @@
 		)
 		(instances
 			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q105")
+					(unit 1)
+				)
+			)
+			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q105")
 					(unit 1)
@@ -2991,6 +3099,12 @@
 			(uuid "5908c373-5d0b-4c3b-af2c-e43705a56f8a")
 		)
 		(instances
+			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q111")
+					(unit 1)
+				)
+			)
 			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q111")
@@ -3093,6 +3207,12 @@
 		)
 		(instances
 			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q107")
+					(unit 1)
+				)
+			)
+			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q107")
 					(unit 1)
@@ -3194,6 +3314,12 @@
 		)
 		(instances
 			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q106")
+					(unit 1)
+				)
+			)
+			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q106")
 					(unit 1)
@@ -3294,6 +3420,12 @@
 		)
 		(instances
 			(project ""
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q109")
+					(unit 1)
+				)
+			)
+			(project ""
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q109")
 					(unit 1)
@@ -3359,6 +3491,12 @@
 			(uuid "62ee1750-84da-4a55-b2ec-050be94ae434")
 		)
 		(instances
+			(project ""
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "#PWR0102")
@@ -3460,6 +3598,12 @@
 		)
 		(instances
 			(project "gate_nor_8in_1bit"
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "Q113")
+					(unit 1)
+				)
+			)
+			(project "gate_nor_8in_1bit"
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "Q113")
 					(unit 1)
@@ -3526,6 +3670,12 @@
 		)
 		(instances
 			(project ""
+				(path "/398cb50c-6e86-4f92-8228-1d657d2c7f9a/d1502354-910b-47ca-850c-906539c064ef"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+			(project ""
 				(path "/e0bdd2f6-2c7e-4d41-bc04-92c78c5634a1"
 					(reference "#PWR0103")
 					(unit 1)
@@ -3533,10 +3683,4 @@
 			)
 		)
 	)
-	(sheet_instances
-		(path "/"
-			(page "1")
-		)
-	)
-	(embedded_fonts no)
 )
