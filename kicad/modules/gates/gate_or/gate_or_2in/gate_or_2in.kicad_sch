@@ -1129,7 +1129,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "231f9c0c-7389-4d92-9022-644ec88f99ca")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR"
 			(at 106.68 63.5 0)
 			(effects
 				(font
@@ -1174,30 +1174,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "850a9bb9-44b3-4710-9875-82796166c3bc")
+			(uuid "c453bd0a-5912-4d68-8fff-4e89e19d47d9")
 		)
 		(instances
-			(project "led_panel_3"
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/0e0286f7-35b1-4ca6-892d-2574e85e738d"
-					(reference "#PWR?")
-					(unit 1)
-				)
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/c9dde3eb-506b-4f3f-9f1d-fa6bf2c8a1c3"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-			(project "main_control"
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/1191743b-cc20-4e5c-a37f-35d283fea872"
-					(reference "#PWR0904")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/5b4c739b-8adf-4c81-b665-49ed29ff7576"
-					(reference "#PWR0902")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d97c998c-2e3c-4bec-b0d5-74fb5d901a4c"
-					(reference "#PWR0902")
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261/db686d11-0334-4730-a996-2817f62f022c"
+					(reference "#PWR01102")
 					(unit 1)
 				)
 			)
@@ -1214,7 +1196,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b64d406-cb65-4a73-961f-7ce6f3b109a7")
-		(property "Reference" "Q?"
+		(property "Reference" "Q"
 			(at 110.49 73.6599 0)
 			(effects
 				(font
@@ -1287,36 +1269,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "585f46b5-6fe3-472f-91bc-98ae91024904")
+			(uuid "ffc54d15-1c2f-4dca-bcfe-eaf795efa3c3")
 		)
 		(pin "3"
-			(uuid "e53dbc4d-6e11-4103-9951-d0d0872f295c")
+			(uuid "066ec59b-6e89-4372-a500-ce23ba065c15")
 		)
 		(pin "1"
-			(uuid "ae8b97f2-692d-4b57-b399-19a7b0c2c725")
+			(uuid "c4fa18f8-e2f9-4e95-82bf-6a92e8c1a58e")
 		)
 		(instances
-			(project "led_panel_3"
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/0e0286f7-35b1-4ca6-892d-2574e85e738d"
-					(reference "Q?")
-					(unit 1)
-				)
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/c9dde3eb-506b-4f3f-9f1d-fa6bf2c8a1c3"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
-			(project "main_control"
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/1191743b-cc20-4e5c-a37f-35d283fea872"
-					(reference "Q909")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/5b4c739b-8adf-4c81-b665-49ed29ff7576"
-					(reference "Q903")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d97c998c-2e3c-4bec-b0d5-74fb5d901a4c"
-					(reference "Q903")
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261/db686d11-0334-4730-a996-2817f62f022c"
+					(reference "Q1103")
 					(unit 1)
 				)
 			)
@@ -1332,7 +1296,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3388012e-6f64-423f-b5b0-e810eb7579e5")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR"
 			(at 95.25 100.33 0)
 			(effects
 				(font
@@ -1377,30 +1341,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "0e480c40-34b3-42bb-9bc3-8fd61a020371")
+			(uuid "8eca3e5e-64a4-4904-b26d-87231dda18c4")
 		)
 		(instances
-			(project "led_panel_3"
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/0e0286f7-35b1-4ca6-892d-2574e85e738d"
-					(reference "#PWR?")
-					(unit 1)
-				)
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/c9dde3eb-506b-4f3f-9f1d-fa6bf2c8a1c3"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-			(project "main_control"
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/1191743b-cc20-4e5c-a37f-35d283fea872"
-					(reference "#PWR0903")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/5b4c739b-8adf-4c81-b665-49ed29ff7576"
-					(reference "#PWR0901")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d97c998c-2e3c-4bec-b0d5-74fb5d901a4c"
-					(reference "#PWR0901")
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261/db686d11-0334-4730-a996-2817f62f022c"
+					(reference "#PWR01101")
 					(unit 1)
 				)
 			)
@@ -1417,7 +1363,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ab71e22-ae3a-4471-a2b1-f7ad4278ae08")
-		(property "Reference" "Q?"
+		(property "Reference" "Q"
 			(at 143.51 72.3899 0)
 			(effects
 				(font
@@ -1490,36 +1436,18 @@
 			)
 		)
 		(pin "3"
-			(uuid "fad7254e-5a1a-4ade-8162-816e36971a2b")
+			(uuid "218b5353-c422-4968-80f0-f0e35af16eaf")
 		)
 		(pin "1"
-			(uuid "8e7376f6-9ad2-4c9a-9814-bec439ec9c20")
+			(uuid "8bbb11cf-0108-4eee-b177-a7bf99bb8e70")
 		)
 		(pin "2"
-			(uuid "cbb3e846-6f2a-4665-b8e6-844f84737354")
+			(uuid "948276fc-998f-4d23-bea0-91af0633075c")
 		)
 		(instances
-			(project "led_panel_3"
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/0e0286f7-35b1-4ca6-892d-2574e85e738d"
-					(reference "Q?")
-					(unit 1)
-				)
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/c9dde3eb-506b-4f3f-9f1d-fa6bf2c8a1c3"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
-			(project "main_control"
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/1191743b-cc20-4e5c-a37f-35d283fea872"
-					(reference "Q911")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/5b4c739b-8adf-4c81-b665-49ed29ff7576"
-					(reference "Q905")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d97c998c-2e3c-4bec-b0d5-74fb5d901a4c"
-					(reference "Q905")
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261/db686d11-0334-4730-a996-2817f62f022c"
+					(reference "Q1105")
 					(unit 1)
 				)
 			)
@@ -1536,7 +1464,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6bb8ec5a-7b68-4df8-ac32-a482983b79c7")
-		(property "Reference" "Q?"
+		(property "Reference" "Q"
 			(at 110.49 63.4999 0)
 			(effects
 				(font
@@ -1609,36 +1537,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "05121b01-1e14-4848-a57b-f02b70edb0b0")
+			(uuid "91d35985-aa0d-48c6-ac08-79c98c132f5a")
 		)
 		(pin "3"
-			(uuid "54dff4a2-503e-4e0c-92d5-135cebba1f33")
+			(uuid "1cb93216-b544-4630-b627-4c57bd332d5d")
 		)
 		(pin "2"
-			(uuid "3a23f140-52ad-426d-b867-c3437844f001")
+			(uuid "91a42aa0-74a8-4670-a491-6c71d1ef2a0f")
 		)
 		(instances
-			(project "led_panel_3"
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/0e0286f7-35b1-4ca6-892d-2574e85e738d"
-					(reference "Q?")
-					(unit 1)
-				)
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/c9dde3eb-506b-4f3f-9f1d-fa6bf2c8a1c3"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
-			(project "main_control"
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/1191743b-cc20-4e5c-a37f-35d283fea872"
-					(reference "Q908")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/5b4c739b-8adf-4c81-b665-49ed29ff7576"
-					(reference "Q902")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d97c998c-2e3c-4bec-b0d5-74fb5d901a4c"
-					(reference "Q902")
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261/db686d11-0334-4730-a996-2817f62f022c"
+					(reference "Q1102")
 					(unit 1)
 				)
 			)
@@ -1654,7 +1564,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85d4ce39-19d5-4b84-a6ed-e3d2b2884fb1")
-		(property "Reference" "Q?"
+		(property "Reference" "Q"
 			(at 91.44 83.8199 0)
 			(effects
 				(font
@@ -1727,36 +1637,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "23614666-de50-45c8-a006-0127a13726a8")
+			(uuid "7992498d-7f4e-4cbe-82e4-453303a7cd42")
 		)
 		(pin "3"
-			(uuid "9752f644-1f35-4cb8-86fb-fa94ed3b3c21")
+			(uuid "98d3d476-f85d-40fa-9840-ccf73df6c0d2")
 		)
 		(pin "2"
-			(uuid "9e114187-6006-46b2-967f-68d16ecb4399")
+			(uuid "d80b1c5b-2c32-4e7a-8123-0ab5a2737b6c")
 		)
 		(instances
-			(project "led_panel_3"
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/0e0286f7-35b1-4ca6-892d-2574e85e738d"
-					(reference "Q?")
-					(unit 1)
-				)
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/c9dde3eb-506b-4f3f-9f1d-fa6bf2c8a1c3"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
-			(project "main_control"
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/1191743b-cc20-4e5c-a37f-35d283fea872"
-					(reference "Q907")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/5b4c739b-8adf-4c81-b665-49ed29ff7576"
-					(reference "Q901")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d97c998c-2e3c-4bec-b0d5-74fb5d901a4c"
-					(reference "Q901")
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261/db686d11-0334-4730-a996-2817f62f022c"
+					(reference "Q1101")
 					(unit 1)
 				)
 			)
@@ -1772,7 +1664,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0352740-c832-48ff-b13d-810c29f6b1b0")
-		(property "Reference" "Q?"
+		(property "Reference" "Q"
 			(at 143.51 82.5499 0)
 			(effects
 				(font
@@ -1845,36 +1737,18 @@
 			)
 		)
 		(pin "3"
-			(uuid "47ab2771-0ceb-4cb6-aa9f-70d57ad99e67")
+			(uuid "117d355c-939f-4796-90fc-f6cb05fe4c7b")
 		)
 		(pin "2"
-			(uuid "5fce5aab-0c5a-4664-ab97-2b31379806f7")
+			(uuid "9d0fc76e-fde7-4aa5-872a-cb0185bb377e")
 		)
 		(pin "1"
-			(uuid "907fc3bb-ad79-46ad-8158-e90116b00800")
+			(uuid "3289c5c6-5665-4b19-9c6d-0873c2ac182b")
 		)
 		(instances
-			(project "led_panel_3"
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/0e0286f7-35b1-4ca6-892d-2574e85e738d"
-					(reference "Q?")
-					(unit 1)
-				)
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/c9dde3eb-506b-4f3f-9f1d-fa6bf2c8a1c3"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
-			(project "main_control"
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/1191743b-cc20-4e5c-a37f-35d283fea872"
-					(reference "Q912")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/5b4c739b-8adf-4c81-b665-49ed29ff7576"
-					(reference "Q906")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d97c998c-2e3c-4bec-b0d5-74fb5d901a4c"
-					(reference "Q906")
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261/db686d11-0334-4730-a996-2817f62f022c"
+					(reference "Q1106")
 					(unit 1)
 				)
 			)
@@ -1890,7 +1764,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5120e16-d4d8-4d39-be20-72965019783d")
-		(property "Reference" "Q?"
+		(property "Reference" "Q"
 			(at 110.49 83.8199 0)
 			(effects
 				(font
@@ -1963,36 +1837,18 @@
 			)
 		)
 		(pin "3"
-			(uuid "6048a0f6-1b7a-4e6f-ae0b-cae4c50bedbb")
+			(uuid "f072134d-68f0-4231-af0b-64b576d4f7ff")
 		)
 		(pin "1"
-			(uuid "b6a5b808-f924-4e07-91c3-644d51b0d7c0")
+			(uuid "f4e43546-a8ec-436e-9e92-57b29ab9e7d6")
 		)
 		(pin "2"
-			(uuid "dcf5ae8c-c872-44f6-9765-916e6f073aae")
+			(uuid "a452db52-9043-4185-8b66-1d83306fdead")
 		)
 		(instances
-			(project "led_panel_3"
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/0e0286f7-35b1-4ca6-892d-2574e85e738d"
-					(reference "Q?")
-					(unit 1)
-				)
-				(path "/892e505f-6651-4aa4-9d30-6fa009555436/c9dde3eb-506b-4f3f-9f1d-fa6bf2c8a1c3"
-					(reference "Q?")
-					(unit 1)
-				)
-			)
-			(project "main_control"
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/1191743b-cc20-4e5c-a37f-35d283fea872"
-					(reference "Q910")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/5b4c739b-8adf-4c81-b665-49ed29ff7576"
-					(reference "Q904")
-					(unit 1)
-				)
-				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d97c998c-2e3c-4bec-b0d5-74fb5d901a4c"
-					(reference "Q904")
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261/db686d11-0334-4730-a996-2817f62f022c"
+					(reference "Q1104")
 					(unit 1)
 				)
 			)

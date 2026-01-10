@@ -1275,7 +1275,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "mux_8to1_8bit"
 				(path "/c9479498-7c42-47b2-8dd7-3cbf94b88bd8/b5ada541-e0cf-4fdf-88dd-1f8be09b3336"
 					(reference "#PWR0405")
 					(unit 1)
@@ -1289,7 +1289,7 @@
 			)
 			(project ""
 				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d75f01b3-cbe7-4863-bb28-49518175362b"
-					(reference "#PWR0405")
+					(reference "#PWR01005")
 					(unit 1)
 				)
 			)
@@ -1369,7 +1369,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "mux_8to1_8bit"
 				(path "/c9479498-7c42-47b2-8dd7-3cbf94b88bd8/b5ada541-e0cf-4fdf-88dd-1f8be09b3336"
 					(reference "#PWR0402")
 					(unit 1)
@@ -1383,7 +1383,7 @@
 			)
 			(project ""
 				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d75f01b3-cbe7-4863-bb28-49518175362b"
-					(reference "#PWR0402")
+					(reference "#PWR01002")
 					(unit 1)
 				)
 			)
@@ -1463,7 +1463,7 @@
 					(unit 1)
 				)
 			)
-			(project "mux_2to1_8bit"
+			(project "mux_8to1_8bit"
 				(path "/c9479498-7c42-47b2-8dd7-3cbf94b88bd8/b5ada541-e0cf-4fdf-88dd-1f8be09b3336"
 					(reference "#PWR0406")
 					(unit 1)
@@ -1477,7 +1477,7 @@
 			)
 			(project "mux_2to1_8bit"
 				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d75f01b3-cbe7-4863-bb28-49518175362b"
-					(reference "#PWR0406")
+					(reference "#PWR01006")
 					(unit 1)
 				)
 			)
@@ -1557,7 +1557,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "mux_8to1_8bit"
 				(path "/c9479498-7c42-47b2-8dd7-3cbf94b88bd8/b5ada541-e0cf-4fdf-88dd-1f8be09b3336"
 					(reference "#PWR0403")
 					(unit 1)
@@ -1571,7 +1571,7 @@
 			)
 			(project ""
 				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d75f01b3-cbe7-4863-bb28-49518175362b"
-					(reference "#PWR0403")
+					(reference "#PWR01003")
 					(unit 1)
 				)
 			)
@@ -1697,7 +1697,7 @@
 					(unit 1)
 				)
 			)
-			(project "mux_2to1_8bit"
+			(project "mux_8to1_8bit"
 				(path "/c9479498-7c42-47b2-8dd7-3cbf94b88bd8/b5ada541-e0cf-4fdf-88dd-1f8be09b3336"
 					(reference "U402")
 					(unit 1)
@@ -1711,7 +1711,7 @@
 			)
 			(project "mux_2to1_8bit"
 				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d75f01b3-cbe7-4863-bb28-49518175362b"
-					(reference "U402")
+					(reference "U1002")
 					(unit 1)
 				)
 			)
@@ -1837,7 +1837,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "mux_8to1_8bit"
 				(path "/c9479498-7c42-47b2-8dd7-3cbf94b88bd8/b5ada541-e0cf-4fdf-88dd-1f8be09b3336"
 					(reference "U401")
 					(unit 1)
@@ -1851,7 +1851,7 @@
 			)
 			(project ""
 				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d75f01b3-cbe7-4863-bb28-49518175362b"
-					(reference "U401")
+					(reference "U1001")
 					(unit 1)
 				)
 			)
@@ -1931,7 +1931,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "mux_8to1_8bit"
 				(path "/c9479498-7c42-47b2-8dd7-3cbf94b88bd8/b5ada541-e0cf-4fdf-88dd-1f8be09b3336"
 					(reference "#PWR0401")
 					(unit 1)
@@ -1945,7 +1945,7 @@
 			)
 			(project ""
 				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d75f01b3-cbe7-4863-bb28-49518175362b"
-					(reference "#PWR0401")
+					(reference "#PWR01001")
 					(unit 1)
 				)
 			)
@@ -2025,7 +2025,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "mux_8to1_8bit"
 				(path "/c9479498-7c42-47b2-8dd7-3cbf94b88bd8/b5ada541-e0cf-4fdf-88dd-1f8be09b3336"
 					(reference "#PWR0404")
 					(unit 1)
@@ -2039,7 +2039,7 @@
 			)
 			(project ""
 				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/d75f01b3-cbe7-4863-bb28-49518175362b"
-					(reference "#PWR0404")
+					(reference "#PWR01004")
 					(unit 1)
 				)
 			)

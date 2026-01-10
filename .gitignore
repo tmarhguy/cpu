@@ -22,6 +22,9 @@
 *.3dshapes/
 *.cache/
 *.lib-cache
+*-backups/
+fp-info-cache
+*.kicad_sch.lck
 
 # Gerber files (keep in gerbers/ but ignore temp files)
 *.gbr

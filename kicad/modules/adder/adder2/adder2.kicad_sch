@@ -1928,7 +1928,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1025b8c7-2f84-431f-881c-66d8a77f1d32")
-		(property "Reference" "C201"
+		(property "Reference" "C?"
 			(at 24.13 144.7799 0)
 			(effects
 				(font
@@ -1995,6 +1995,12 @@
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/e678a1db-fc7f-4871-8288-df3fa647bce0"
 					(reference "C2201")
+					(unit 1)
+				)
+			)
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -2106,12 +2112,18 @@
 					(unit 2)
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/5ca3f5ef-5ebe-454d-ad68-04b74d36a9c7"
-					(reference "U?")
+					(reference "U204")
 					(unit 1)
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/e678a1db-fc7f-4871-8288-df3fa647bce0"
 					(reference "U2201")
 					(unit 2)
+				)
+			)
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(reference "U?")
+					(unit 1)
 				)
 			)
 		)
@@ -2224,12 +2236,18 @@
 					(unit 5)
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/5ca3f5ef-5ebe-454d-ad68-04b74d36a9c7"
-					(reference "U?")
+					(reference "U201")
 					(unit 1)
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/e678a1db-fc7f-4871-8288-df3fa647bce0"
 					(reference "U2201")
 					(unit 5)
+				)
+			)
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(reference "U?")
+					(unit 1)
 				)
 			)
 		)
@@ -2340,12 +2358,18 @@
 					(unit 3)
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/5ca3f5ef-5ebe-454d-ad68-04b74d36a9c7"
-					(reference "U?")
+					(reference "U203")
 					(unit 1)
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/e678a1db-fc7f-4871-8288-df3fa647bce0"
 					(reference "U2201")
 					(unit 3)
+				)
+			)
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(reference "U?")
+					(unit 1)
 				)
 			)
 		)
@@ -2456,12 +2480,18 @@
 					(unit 4)
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/5ca3f5ef-5ebe-454d-ad68-04b74d36a9c7"
-					(reference "U?")
+					(reference "U205")
 					(unit 1)
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/e678a1db-fc7f-4871-8288-df3fa647bce0"
 					(reference "U2201")
 					(unit 4)
+				)
+			)
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(reference "U?")
+					(unit 1)
 				)
 			)
 		)
@@ -2476,7 +2506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca0b85f9-8405-4af0-8181-801db9d2a2a3")
-		(property "Reference" "#PWR0202"
+		(property "Reference" "#PWR?"
 			(at 36.83 167.64 0)
 			(effects
 				(font
@@ -2539,6 +2569,12 @@
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/e678a1db-fc7f-4871-8288-df3fa647bce0"
 					(reference "#PWR02202")
+					(unit 1)
+				)
+			)
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -2650,11 +2686,17 @@
 					(unit 1)
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/5ca3f5ef-5ebe-454d-ad68-04b74d36a9c7"
-					(reference "U?")
+					(reference "U202")
 					(unit 1)
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/e678a1db-fc7f-4871-8288-df3fa647bce0"
 					(reference "U2201")
+					(unit 1)
+				)
+			)
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -2670,7 +2712,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eafd9705-179d-4f3e-83f9-54c7928f98a1")
-		(property "Reference" "#PWR0201"
+		(property "Reference" "#PWR?"
 			(at 36.83 135.89 0)
 			(effects
 				(font
@@ -2733,6 +2775,12 @@
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/e678a1db-fc7f-4871-8288-df3fa647bce0"
 					(reference "#PWR02201")
+					(unit 1)
+				)
+			)
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -2818,6 +2866,11 @@
 					(page "39")
 				)
 			)
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(page "2")
+				)
+			)
 		)
 	)
 	(sheet
@@ -2845,7 +2898,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_or/gate_or_2in/gate_or_2in.kicad_sch"
+		(property "Sheetfile" "../../gates/gate_or/gate_or_2in/gate_or_2in.kicad_sch"
 			(at 110.49 58.3696 0)
 			(effects
 				(font
@@ -2898,6 +2951,11 @@
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/072d980d-7920-4601-abce-27648096a13e"
 					(page "41")
+				)
+			)
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(page "10")
 				)
 			)
 		)
@@ -2982,6 +3040,11 @@
 					(page "44")
 				)
 			)
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(page "8")
+				)
+			)
 		)
 	)
 	(sheet
@@ -3062,6 +3125,11 @@
 				)
 				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/072d980d-7920-4601-abce-27648096a13e"
 					(page "24")
+				)
+			)
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(page "4")
 				)
 			)
 		)
@@ -3146,6 +3214,11 @@
 					(page "36")
 				)
 			)
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(page "6")
+				)
+			)
 		)
 	)
 	(sheet
@@ -3163,7 +3236,7 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "7542d4e1-7ca1-40ab-b630-13be576ad1e2")
+		(uuid "db686d11-0334-4730-a996-2817f62f022c")
 		(property "Sheetname" "or2_2"
 			(at 127 105.9684 0)
 			(effects
@@ -3173,7 +3246,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_or/gate_or_2in/gate_or_2in.kicad_sch"
+		(property "Sheetfile" "../../gates/gate_or/gate_or_2in/gate_or_2in.kicad_sch"
 			(at 127 118.0596 0)
 			(effects
 				(font
@@ -3185,7 +3258,7 @@
 		)
 		(pin "B" input
 			(at 127 115.57 180)
-			(uuid "9423ce88-00d5-4209-bb64-41ae22b4544f")
+			(uuid "8bca2033-8732-41bd-b0f3-37bf18ba65c6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3195,7 +3268,7 @@
 		)
 		(pin "A" input
 			(at 127 109.22 180)
-			(uuid "d48a2886-3be9-46b4-94a9-529ca0dc872b")
+			(uuid "b0392954-e03f-400f-8a45-cc76d9253875")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3205,7 +3278,7 @@
 		)
 		(pin "Y" output
 			(at 139.7 111.76 0)
-			(uuid "319db33d-bab3-4687-9be3-0b3324333337")
+			(uuid "5349412c-666a-4d7c-bdcb-e9032102ed1c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3214,20 +3287,17 @@
 			)
 		)
 		(instances
-			(project "add_sub"
-				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/5ca3f5ef-5ebe-454d-ad68-04b74d36a9c7"
-					(page "8")
-				)
-				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/0a1186b3-be7e-452c-80fb-048fb270c396"
-					(page "16")
-				)
-				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/e678a1db-fc7f-4871-8288-df3fa647bce0"
-					(page "27")
-				)
-				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/92236a5d-2e44-4e21-b0a9-9f7c8d85dee0/072d980d-7920-4601-abce-27648096a13e"
-					(page "38")
+			(project "adder2"
+				(path "/e938a6bb-35cc-48f7-b2cb-f9f5c6ada261"
+					(page "11")
 				)
 			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )

@@ -1448,6 +1448,79 @@
 		)
 	)
 	(sheet
+		(at 59.69 120.65)
+		(size 12.7 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "da07631c-7ab1-4341-8c58-f78255426986")
+		(property "Sheetname" "or2_8"
+			(at 59.69 119.9384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../gate_or_2in/gate_or_2in.kicad_sch"
+			(at 59.69 132.6646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "Y" output
+			(at 72.39 125.73 0)
+			(uuid "65f2d3ec-b1f9-4313-a43a-c42e219ef175")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "A" input
+			(at 59.69 121.92 180)
+			(uuid "7776e649-d465-425b-98e1-3f53cca18b9a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "B" input
+			(at 59.69 129.54 180)
+			(uuid "0ea738eb-3539-4066-a508-f3a763151d30")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "gate_or_2in_8bit"
+				(path "/d541a682-fa01-47a3-834a-d48fe819bd53"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 59.69 50.8)
 		(size 12.7 11.43)
 		(exclude_from_sim no)

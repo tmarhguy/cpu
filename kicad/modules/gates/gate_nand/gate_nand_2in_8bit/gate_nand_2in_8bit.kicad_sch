@@ -510,89 +510,6 @@
 		(uuid "ff4f8f35-35ef-42bd-ac2e-8853f73e8ec6")
 	)
 	(sheet
-		(at 34.29 36.83)
-		(size 12.7 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "2b83742c-e711-47a1-be0f-026207ca7e8a")
-		(property "Sheetname" "nand2_2"
-			(at 34.29 36.1184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
-			(at 34.29 50.1146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "A" input
-			(at 34.29 39.37 180)
-			(uuid "47247fbb-ad59-49d9-a611-950777787d53")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "B" input
-			(at 34.29 46.99 180)
-			(uuid "1c1394d6-fc5d-4419-805b-2f480e8778ac")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Y" output
-			(at 46.99 43.18 0)
-			(uuid "2e7b0d2a-7d0b-4a21-b7b0-54c4141ab71e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "gate_nand_2in_8bit"
-				(path "/5db9410b-1a15-448c-89b3-091faadf870e"
-					(page "3")
-				)
-			)
-			(project ""
-				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "#")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 34.29 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
@@ -607,7 +524,7 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "2e551d64-4394-42a7-b90f-8986d11df6da")
+		(uuid "01f451e1-a98e-4c7e-accc-ae5516a57e35")
 		(property "Sheetname" "nand2_7"
 			(at 34.29 118.6684 0)
 			(effects
@@ -617,7 +534,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
+		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
 			(at 34.29 132.6646 0)
 			(effects
 				(font
@@ -629,7 +546,7 @@
 		)
 		(pin "A" input
 			(at 34.29 121.92 180)
-			(uuid "ccb93d34-f9eb-4f89-972e-d908a2fcd96e")
+			(uuid "5556916a-6b75-4277-946c-422ebf2e5aa8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -639,7 +556,7 @@
 		)
 		(pin "B" input
 			(at 34.29 129.54 180)
-			(uuid "7978a387-6a6b-4801-9720-e413c617380a")
+			(uuid "f0c64512-cd1d-46e7-b050-e37b34a53fb2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -649,90 +566,7 @@
 		)
 		(pin "Y" output
 			(at 46.99 125.73 0)
-			(uuid "ff43dc2a-4ddc-4f23-a3d4-574e920b7e84")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "gate_nand_2in_8bit"
-				(path "/5db9410b-1a15-448c-89b3-091faadf870e"
-					(page "8")
-				)
-			)
-			(project ""
-				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "#")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 34.29 102.87)
-		(size 12.7 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "61d00d63-6cf1-4c0a-9d5d-099308900f78")
-		(property "Sheetname" "nand2_6"
-			(at 34.29 102.1584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
-			(at 34.29 116.1546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "A" input
-			(at 34.29 105.41 180)
-			(uuid "4aeecc88-854f-48aa-b3d6-a48e032e1e94")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "B" input
-			(at 34.29 113.03 180)
-			(uuid "035ad229-609f-4dff-939b-0b05799f439b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Y" output
-			(at 46.99 109.22 0)
-			(uuid "bc2f5257-ef0a-4a38-9910-5b1b3b33f40e")
+			(uuid "458166fb-754b-46aa-8a85-637b6598f781")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -746,20 +580,10 @@
 					(page "7")
 				)
 			)
-			(project ""
-				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "#")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "7")
-				)
-			)
 		)
 	)
 	(sheet
-		(at 34.29 69.85)
+		(at 34.29 36.83)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -773,9 +597,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "76285bdb-9d7e-46cd-949d-cd049d44de41")
-		(property "Sheetname" "nand2_4"
-			(at 34.29 69.1384 0)
+		(uuid "09b48fca-fdde-402a-bb06-0f8b022e834f")
+		(property "Sheetname" "nand2_2"
+			(at 34.29 36.1184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -783,8 +607,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
-			(at 34.29 83.1346 0)
+		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
+			(at 34.29 50.1146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -794,8 +618,8 @@
 			)
 		)
 		(pin "A" input
-			(at 34.29 72.39 180)
-			(uuid "97897ace-69b5-4dd6-808c-1e33894cde58")
+			(at 34.29 39.37 180)
+			(uuid "d823d14e-0eec-45ec-bb8b-2c5eac283376")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -804,8 +628,8 @@
 			)
 		)
 		(pin "B" input
-			(at 34.29 80.01 180)
-			(uuid "04d69003-9c10-4239-b68b-2d95edb963c2")
+			(at 34.29 46.99 180)
+			(uuid "ecdf8020-bc92-49a7-910c-6541b5d35d43")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -814,8 +638,8 @@
 			)
 		)
 		(pin "Y" output
-			(at 46.99 76.2 0)
-			(uuid "c545103c-99c6-4eb9-9387-02adb5ad0225")
+			(at 46.99 43.18 0)
+			(uuid "432c1c4e-50e7-4c86-906c-c23005926d05")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -826,100 +650,7 @@
 		(instances
 			(project "gate_nand_2in_8bit"
 				(path "/5db9410b-1a15-448c-89b3-091faadf870e"
-					(page "5")
-				)
-			)
-			(project ""
-				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "#")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 34.29 135.89)
-		(size 12.7 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "b60bd46d-620f-4cd3-8aa6-d3f2faa898d6")
-		(property "Sheetname" "nand2_8"
-			(at 34.29 135.1784 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
-			(at 34.29 149.1746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "A" input
-			(at 34.29 138.43 180)
-			(uuid "a51b6a81-1991-44db-abd1-4fc6cf337ed7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "B" input
-			(at 34.29 146.05 180)
-			(uuid "45063fd3-1025-4484-b4f1-c37fe8fa08f7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Y" output
-			(at 46.99 142.24 0)
-			(uuid "8a14c4ab-ff41-4c66-bb47-da1658791e7b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "gate_nand_2in_8bit"
-				(path "/5db9410b-1a15-448c-89b3-091faadf870e"
-					(page "9")
-				)
-			)
-			(project ""
-				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "#")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "9")
+					(page "1")
 				)
 			)
 		)
@@ -939,7 +670,7 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "bc9f77ce-1229-42cc-bee9-ef15c66696d5")
+		(uuid "61462911-f96b-4875-9256-4a008e5857bb")
 		(property "Sheetname" "nand2_5"
 			(at 34.29 85.6484 0)
 			(effects
@@ -949,7 +680,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
+		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
 			(at 34.29 99.6446 0)
 			(effects
 				(font
@@ -961,7 +692,7 @@
 		)
 		(pin "A" input
 			(at 34.29 88.9 180)
-			(uuid "01285d24-c4de-4a3a-83b1-9c1d81007ad9")
+			(uuid "cb5d2624-d088-4d09-8e85-4b3cc344a0e7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -971,7 +702,7 @@
 		)
 		(pin "B" input
 			(at 34.29 96.52 180)
-			(uuid "cd206bc4-f39c-4cc6-98b5-99b39381425d")
+			(uuid "30187ae6-f2b0-4274-94ae-c3777a6a7c62")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -981,7 +712,80 @@
 		)
 		(pin "Y" output
 			(at 46.99 92.71 0)
-			(uuid "70ae445b-bbda-4df5-a5d4-5ce335ebefb0")
+			(uuid "0676d50c-0c6c-4e09-870c-dd07fd71606a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "gate_nand_2in_8bit"
+				(path "/5db9410b-1a15-448c-89b3-091faadf870e"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 34.29 102.87)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7a97d47b-42ab-434a-ad37-c75c7ad313f5")
+		(property "Sheetname" "nand2_6"
+			(at 34.29 102.1584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
+			(at 34.29 116.1546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "A" input
+			(at 34.29 105.41 180)
+			(uuid "95c2e829-5983-447e-bf52-a8f206c5d8fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "B" input
+			(at 34.29 113.03 180)
+			(uuid "dd2bb459-32f5-44c0-89b0-dbac5678db0d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Y" output
+			(at 46.99 109.22 0)
+			(uuid "a09f6a99-b0fb-4060-9b0e-2920e91e4ea4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -995,14 +799,150 @@
 					(page "6")
 				)
 			)
-			(project ""
-				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "#")
+		)
+	)
+	(sheet
+		(at 34.29 135.89)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a676fa3e-1961-459a-93a5-cebadcbabbd8")
+		(property "Sheetname" "nand2_8"
+			(at 34.29 135.1784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
+			(at 34.29 149.1746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "A" input
+			(at 34.29 138.43 180)
+			(uuid "074a50f3-aeba-4d16-a24c-1d375cd8a0ec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "B" input
+			(at 34.29 146.05 180)
+			(uuid "e4a19157-7e26-468d-a681-e65e07a65794")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Y" output
+			(at 46.99 142.24 0)
+			(uuid "d7e6aa65-45d9-4679-9123-3e1db1ad1d86")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "gate_nand_2in_8bit"
+				(path "/5db9410b-1a15-448c-89b3-091faadf870e"
+					(page "8")
 				)
 			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "6")
+		)
+	)
+	(sheet
+		(at 34.29 69.85)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d3d2e7b7-181e-4283-9155-9ccd5031cb23")
+		(property "Sheetname" "nand2_4"
+			(at 34.29 69.1384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
+			(at 34.29 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "A" input
+			(at 34.29 72.39 180)
+			(uuid "41a2cb49-2669-4038-a9d9-2209a5fd0b50")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "B" input
+			(at 34.29 80.01 180)
+			(uuid "2169cf61-4612-4f02-bce5-f15e4a182c86")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Y" output
+			(at 46.99 76.2 0)
+			(uuid "7ee89be6-afd4-4abe-8d52-aecce0b40de1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "gate_nand_2in_8bit"
+				(path "/5db9410b-1a15-448c-89b3-091faadf870e"
+					(page "4")
 				)
 			)
 		)
@@ -1022,7 +962,7 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "cdd09ad6-6dea-4ab4-a99c-50a8973f020a")
+		(uuid "f85fda14-81e7-4a48-b3da-9aa240618a01")
 		(property "Sheetname" "nand2_3"
 			(at 34.29 52.6284 0)
 			(effects
@@ -1032,7 +972,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
+		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
 			(at 34.29 66.6246 0)
 			(effects
 				(font
@@ -1044,7 +984,7 @@
 		)
 		(pin "A" input
 			(at 34.29 55.88 180)
-			(uuid "1a9ad995-c07b-4e1d-aee8-46357c7cf5aa")
+			(uuid "229ca883-ca62-4d8b-bf1b-7b1e8d4cdae2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1054,7 +994,7 @@
 		)
 		(pin "B" input
 			(at 34.29 63.5 180)
-			(uuid "4a055408-f1e9-47d8-9db3-0d33017d5d2a")
+			(uuid "6d07d2ad-9b82-412d-81c0-3dd847f53046")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1064,7 +1004,7 @@
 		)
 		(pin "Y" output
 			(at 46.99 59.69 0)
-			(uuid "a3c51c02-6fb9-447b-ad22-99b408de2e0a")
+			(uuid "b4d821a5-bfcd-4dbc-9489-270393b23156")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1075,17 +1015,7 @@
 		(instances
 			(project "gate_nand_2in_8bit"
 				(path "/5db9410b-1a15-448c-89b3-091faadf870e"
-					(page "4")
-				)
-			)
-			(project ""
-				(path "/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "#")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/3114c630-b5bb-4706-a171-8ab374ad8acb"
-					(page "4")
+					(page "3")
 				)
 			)
 		)
@@ -1115,7 +1045,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_nand/gate_nand_2in/gate_nand_2in.kicad_sch"
+		(property "Sheetfile" "../gate_nand_2in/gate_nand_2in.kicad_sch"
 			(at 34.29 33.6046 0)
 			(effects
 				(font
