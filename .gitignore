@@ -78,5 +78,7 @@ Thumbs.db
 
 # Test outputs
 test_results/
+# Allow spec CSV files (opcode tables, etc.) - exception before general rule
+!spec/**/*.csv
 *.csv
 
