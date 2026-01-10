@@ -502,6 +502,69 @@
 		(uuid "fa180954-b65e-4d78-9977-9bf7e79468d5")
 	)
 	(sheet
+		(at 41.91 60.96)
+		(size 12.7 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "12baccda-de61-4ff2-89c1-cc980ff8bc59")
+		(property "Sheetname" "inv4"
+			(at 41.91 60.2484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
+			(at 41.91 70.4346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "A" input
+			(at 41.91 64.77 180)
+			(uuid "c4c07a47-20b8-4c08-9228-1e3eaad611c5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Y" output
+			(at 54.61 64.77 0)
+			(uuid "ab6ae947-09a2-4247-9978-561f6b0cf044")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "gate_inv_8bit"
+				(path "/d141fce1-7092-474f-ac13-21228438d92c"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 41.91 48.26)
 		(size 12.7 8.89)
 		(exclude_from_sim no)
@@ -516,7 +579,7 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "0247f827-8d3c-4cec-b4d7-7bf87fdf5d4f")
+		(uuid "3a2fa2a6-4027-46c4-90cc-58cbe339a8cc")
 		(property "Sheetname" "inv3"
 			(at 41.91 47.5484 0)
 			(effects
@@ -526,7 +589,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
+		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
 			(at 41.91 57.7346 0)
 			(effects
 				(font
@@ -538,7 +601,7 @@
 		)
 		(pin "A" input
 			(at 41.91 52.07 180)
-			(uuid "06968bde-f622-423b-a5e4-bc2fa82835e1")
+			(uuid "dab84496-4f18-425f-97af-d77330834e8e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -548,7 +611,7 @@
 		)
 		(pin "Y" output
 			(at 54.61 52.07 0)
-			(uuid "2e8960cc-59c4-4ff5-b0c1-8c738da84a15")
+			(uuid "0d6317ee-2e78-4333-ac9c-374a63bdec90")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -559,28 +622,13 @@
 		(instances
 			(project "gate_inv_8bit"
 				(path "/d141fce1-7092-474f-ac13-21228438d92c"
-					(page "4")
-				)
-			)
-			(project ""
-				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "24")
-				)
-			)
-			(project ""
-				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
-					(page "")
+					(page "3")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 41.91 111.76)
+		(at 41.91 35.56)
 		(size 12.7 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -594,9 +642,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "3b34911b-7826-46ba-96a4-3064a68ade43")
-		(property "Sheetname" "inv8"
-			(at 41.91 111.0484 0)
+		(uuid "60421d18-f918-422e-9acf-6291f4552ab2")
+		(property "Sheetname" "inv2"
+			(at 41.91 34.8484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -604,8 +652,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
-			(at 41.91 121.2346 0)
+		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
+			(at 41.91 45.0346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -615,8 +663,8 @@
 			)
 		)
 		(pin "A" input
-			(at 41.91 115.57 180)
-			(uuid "0cc6cfca-7403-47e7-99a0-c1388b19bc20")
+			(at 41.91 39.37 180)
+			(uuid "ffc12da4-557b-4f1b-b408-ed95b4565ed4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -625,8 +673,8 @@
 			)
 		)
 		(pin "Y" output
-			(at 54.61 115.57 0)
-			(uuid "842fa67f-d7c4-4f10-b91c-23d3223a814c")
+			(at 54.61 39.37 0)
+			(uuid "4dedbf7a-af88-49c1-ba28-551e56a04013")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -637,28 +685,13 @@
 		(instances
 			(project "gate_inv_8bit"
 				(path "/d141fce1-7092-474f-ac13-21228438d92c"
-					(page "9")
-				)
-			)
-			(project ""
-				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "30")
-				)
-			)
-			(project ""
-				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
-					(page "")
+					(page "1")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 41.91 86.36)
+		(at 41.91 73.66)
 		(size 12.7 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -672,9 +705,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "6e61a5c2-c888-4195-941e-2b64206ee3f0")
-		(property "Sheetname" "inv6"
-			(at 41.91 85.6484 0)
+		(uuid "7ca7b9d9-dd96-40f5-80e5-151f81d53068")
+		(property "Sheetname" "inv5"
+			(at 41.91 72.9484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -682,8 +715,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
-			(at 41.91 95.8346 0)
+		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
+			(at 41.91 83.1346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -693,8 +726,8 @@
 			)
 		)
 		(pin "A" input
-			(at 41.91 90.17 180)
-			(uuid "b8a2d1da-da2f-43b2-8751-877f6f4a2765")
+			(at 41.91 77.47 180)
+			(uuid "21b10a99-4bc7-4435-8561-78924c548977")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -703,8 +736,8 @@
 			)
 		)
 		(pin "Y" output
-			(at 54.61 90.17 0)
-			(uuid "3cc19639-2af8-46c7-a6e6-1d8945157234")
+			(at 54.61 77.47 0)
+			(uuid "82edb881-d1e0-4439-90a2-2f5a0093f765")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -715,22 +748,7 @@
 		(instances
 			(project "gate_inv_8bit"
 				(path "/d141fce1-7092-474f-ac13-21228438d92c"
-					(page "7")
-				)
-			)
-			(project ""
-				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "28")
-				)
-			)
-			(project ""
-				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
-					(page "")
+					(page "5")
 				)
 			)
 		)
@@ -760,7 +778,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
+		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
 			(at 41.91 32.3346 0)
 			(effects
 				(font
@@ -798,7 +816,7 @@
 			)
 			(project ""
 				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "")
+					(page "#")
 				)
 			)
 			(project "main_logic"
@@ -808,13 +826,13 @@
 			)
 			(project ""
 				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
-					(page "")
+					(page "#")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 41.91 60.96)
+		(at 41.91 111.76)
 		(size 12.7 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -828,9 +846,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "aea86822-5f7d-434a-95b6-5ff51e2438ed")
-		(property "Sheetname" "inv4"
-			(at 41.91 60.2484 0)
+		(uuid "cbe845e2-fbfa-4e99-b5aa-42ea773ed407")
+		(property "Sheetname" "inv8"
+			(at 41.91 111.0484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -838,8 +856,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
-			(at 41.91 70.4346 0)
+		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
+			(at 41.91 121.2346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -849,8 +867,8 @@
 			)
 		)
 		(pin "A" input
-			(at 41.91 64.77 180)
-			(uuid "8a6c8bfa-2147-4cb2-a50b-c88fb3f04f26")
+			(at 41.91 115.57 180)
+			(uuid "8d74638d-6156-4cd1-82dd-0394ec455c94")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -859,8 +877,8 @@
 			)
 		)
 		(pin "Y" output
-			(at 54.61 64.77 0)
-			(uuid "5aec45b5-b13e-419f-8e02-f01b1e240ce6")
+			(at 54.61 115.57 0)
+			(uuid "3c05c995-1cfd-41d4-a68f-c373c39f87d5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -871,28 +889,13 @@
 		(instances
 			(project "gate_inv_8bit"
 				(path "/d141fce1-7092-474f-ac13-21228438d92c"
-					(page "5")
-				)
-			)
-			(project ""
-				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "26")
-				)
-			)
-			(project ""
-				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
-					(page "")
+					(page "8")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 41.91 35.56)
+		(at 41.91 86.36)
 		(size 12.7 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -906,9 +909,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "dc3c95e3-2f7b-48cf-ab5e-3756f25369ff")
-		(property "Sheetname" "inv2"
-			(at 41.91 34.8484 0)
+		(uuid "cfb92fbf-905c-43ce-8707-6acd4a04428b")
+		(property "Sheetname" "inv6"
+			(at 41.91 85.6484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -916,8 +919,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
-			(at 41.91 45.0346 0)
+		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
+			(at 41.91 95.8346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -927,8 +930,8 @@
 			)
 		)
 		(pin "A" input
-			(at 41.91 39.37 180)
-			(uuid "a41332b9-a56d-4bac-ad7a-7a5acc17112f")
+			(at 41.91 90.17 180)
+			(uuid "bdcc691c-faad-4d24-b604-c46b3ffbab8b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -937,86 +940,8 @@
 			)
 		)
 		(pin "Y" output
-			(at 54.61 39.37 0)
-			(uuid "6d679778-ab14-4c5f-b8f7-7a641426fa44")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "gate_inv_8bit"
-				(path "/d141fce1-7092-474f-ac13-21228438d92c"
-					(page "3")
-				)
-			)
-			(project ""
-				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "23")
-				)
-			)
-			(project ""
-				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
-					(page "")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 41.91 73.66)
-		(size 12.7 8.89)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "f45c6533-ea9e-4c66-8180-b4ff57581d4b")
-		(property "Sheetname" "inv5"
-			(at 41.91 72.9484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
-			(at 41.91 83.1346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "A" input
-			(at 41.91 77.47 180)
-			(uuid "0476da9e-c3cd-4aa3-a7be-48516c2759eb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Y" output
-			(at 54.61 77.47 0)
-			(uuid "990c61da-6a20-4982-87b7-157892f07043")
+			(at 54.61 90.17 0)
+			(uuid "a53838cb-c756-4a43-9c44-4c77a3130c25")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1028,21 +953,6 @@
 			(project "gate_inv_8bit"
 				(path "/d141fce1-7092-474f-ac13-21228438d92c"
 					(page "6")
-				)
-			)
-			(project ""
-				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "27")
-				)
-			)
-			(project ""
-				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
-					(page "")
 				)
 			)
 		)
@@ -1062,7 +972,7 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "f8a9cea9-3e0b-47bf-9a8a-85682ece4fdc")
+		(uuid "e8076ae0-d234-4675-a580-3fff14bf2f4c")
 		(property "Sheetname" "inv7"
 			(at 41.91 98.3484 0)
 			(effects
@@ -1072,7 +982,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_inv/gate_inv_1bit/gate_inv_1bit.kicad_sch"
+		(property "Sheetfile" "../gate_inv_1bit/gate_inv_1bit.kicad_sch"
 			(at 41.91 108.5346 0)
 			(effects
 				(font
@@ -1084,7 +994,7 @@
 		)
 		(pin "A" input
 			(at 41.91 102.87 180)
-			(uuid "a2c1598f-63f8-4e1f-bcad-7cf4e9ece655")
+			(uuid "626bebae-866c-4672-9746-f2992860c49d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1094,7 +1004,7 @@
 		)
 		(pin "Y" output
 			(at 54.61 102.87 0)
-			(uuid "7fd5597f-15cb-4ec6-8c5c-4ba35e13c988")
+			(uuid "3eff80d6-b436-4b0d-8e31-5fc75927ff6b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1105,22 +1015,7 @@
 		(instances
 			(project "gate_inv_8bit"
 				(path "/d141fce1-7092-474f-ac13-21228438d92c"
-					(page "8")
-				)
-			)
-			(project ""
-				(path "/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb"
-					(page "29")
-				)
-			)
-			(project ""
-				(path "/0f98840f-83e1-46ff-ab4b-366905a86376"
-					(page "")
+					(page "7")
 				)
 			)
 		)

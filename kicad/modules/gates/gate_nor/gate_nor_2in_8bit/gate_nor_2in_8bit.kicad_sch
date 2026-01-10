@@ -970,172 +970,6 @@
 		(uuid "f311f8f4-b213-4830-92d9-3fdae6b843d7")
 	)
 	(sheet
-		(at 62.23 71.12)
-		(size 15.24 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "005d5fb6-ffdd-4d97-a483-8bc113be093c")
-		(property "Sheetname" "2nor4"
-			(at 62.23 70.4084 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
-			(at 62.23 84.4046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "A" input
-			(at 62.23 73.66 180)
-			(uuid "708a517b-174d-4b9e-bf6f-1ed5a7c89c67")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Y" output
-			(at 77.47 77.47 0)
-			(uuid "bed0ac0e-6837-4f6a-9f86-2e18fe6598ab")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "B" input
-			(at 62.23 81.28 180)
-			(uuid "a174ff40-f087-40a8-ba21-d4eb16c121dd")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "gate_nor_2in_8bit"
-				(path "/1dc696ed-d35e-495d-aad0-47f49dae0428"
-					(page "5")
-				)
-			)
-			(project ""
-				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "#")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "13")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 62.23 119.38)
-		(size 15.24 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "339f56fc-e724-45e5-9cde-cf14800cf260")
-		(property "Sheetname" "2nor7"
-			(at 62.23 118.6684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
-			(at 62.23 132.6646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "A" input
-			(at 62.23 121.92 180)
-			(uuid "5c92163c-c4a8-4f7c-8e4d-c2c94e2c15d8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Y" output
-			(at 77.47 125.73 0)
-			(uuid "f3711ecc-3fd7-4485-8b7d-953b54142be4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "B" input
-			(at 62.23 129.54 180)
-			(uuid "7cfc3b75-f453-473d-9807-c4e6ea5a3222")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "gate_nor_2in_8bit"
-				(path "/1dc696ed-d35e-495d-aad0-47f49dae0428"
-					(page "8")
-				)
-			)
-			(project ""
-				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "#")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "16")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 62.23 135.89)
 		(size 15.24 12.7)
 		(exclude_from_sim no)
@@ -1150,7 +984,7 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "61d0e518-85ca-4b35-b4e2-abad5b8226fa")
+		(uuid "2f4a4bfe-bc29-4480-9365-6bb0cacaf220")
 		(property "Sheetname" "2nor8"
 			(at 62.23 135.1784 0)
 			(effects
@@ -1160,7 +994,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
 			(at 62.23 149.1746 0)
 			(effects
 				(font
@@ -1172,7 +1006,7 @@
 		)
 		(pin "A" input
 			(at 62.23 138.43 180)
-			(uuid "1b719690-b5e6-49f6-9e05-8ec99322d172")
+			(uuid "2c85648c-cfe5-4bd2-84e2-96b428bead5a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1182,7 +1016,7 @@
 		)
 		(pin "Y" output
 			(at 77.47 142.24 0)
-			(uuid "7b8eede1-dde3-42ad-a06f-9f41c1fffec6")
+			(uuid "41cb5bca-af92-4520-b1fb-3de9333baa05")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1192,7 +1026,7 @@
 		)
 		(pin "B" input
 			(at 62.23 146.05 180)
-			(uuid "3a9ecfea-8542-4e0d-b6d8-6a22f4a1e4fa")
+			(uuid "4f3d3d23-3e0a-4ffe-a933-d018c0ee0062")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1203,17 +1037,80 @@
 		(instances
 			(project "gate_nor_2in_8bit"
 				(path "/1dc696ed-d35e-495d-aad0-47f49dae0428"
-					(page "9")
+					(page "8")
 				)
 			)
-			(project ""
-				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "#")
+		)
+	)
+	(sheet
+		(at 62.23 38.1)
+		(size 15.24 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "67bc095c-bc21-4780-9264-a26a99f8eba0")
+		(property "Sheetname" "2nor2"
+			(at 62.23 37.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "17")
+		)
+		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+			(at 62.23 51.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "A" input
+			(at 62.23 40.64 180)
+			(uuid "066b9860-26a8-4daf-8849-ec38aab766be")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Y" output
+			(at 77.47 44.45 0)
+			(uuid "7b26efa0-463a-4582-8446-84895e312b13")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "B" input
+			(at 62.23 48.26 180)
+			(uuid "d51015ed-9bcb-42f8-bbec-9ba8ee0ac0cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "gate_nor_2in_8bit"
+				(path "/1dc696ed-d35e-495d-aad0-47f49dae0428"
+					(page "1")
 				)
 			)
 		)
@@ -1233,7 +1130,7 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "624b55c6-58f7-4098-8280-3e7bdb20252c")
+		(uuid "6fe04fa8-209d-43e3-ae61-844c317e417f")
 		(property "Sheetname" "2nor6"
 			(at 62.23 103.4284 0)
 			(effects
@@ -1243,7 +1140,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
 			(at 62.23 117.4246 0)
 			(effects
 				(font
@@ -1255,7 +1152,7 @@
 		)
 		(pin "A" input
 			(at 62.23 106.68 180)
-			(uuid "b56707cf-6315-47aa-8a09-ebf9bc6cc8eb")
+			(uuid "be9e241f-c9b6-4d52-97b7-496af1ce4eda")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1265,7 +1162,7 @@
 		)
 		(pin "Y" output
 			(at 77.47 110.49 0)
-			(uuid "939b47e3-e336-4813-97c9-323f1eb66f7c")
+			(uuid "1e2dee58-0947-46d9-861f-e7e49793ee68")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1275,7 +1172,7 @@
 		)
 		(pin "B" input
 			(at 62.23 114.3 180)
-			(uuid "23c323fb-dbfe-4182-a42f-1b42109bb8f5")
+			(uuid "ec9b6930-d11f-469a-8649-e259e627409f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1286,17 +1183,80 @@
 		(instances
 			(project "gate_nor_2in_8bit"
 				(path "/1dc696ed-d35e-495d-aad0-47f49dae0428"
-					(page "7")
+					(page "6")
 				)
 			)
-			(project ""
-				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "#")
+		)
+	)
+	(sheet
+		(at 62.23 54.61)
+		(size 15.24 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8ef37113-3f84-4457-b92f-f8b8cc6515bd")
+		(property "Sheetname" "2nor3"
+			(at 62.23 53.8984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "15")
+		)
+		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+			(at 62.23 67.8946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "A" input
+			(at 62.23 57.15 180)
+			(uuid "2238bc75-d526-4964-920a-b76bc543b195")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Y" output
+			(at 77.47 60.96 0)
+			(uuid "5965a531-dec4-49ac-81f2-ead461abf714")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "B" input
+			(at 62.23 64.77 180)
+			(uuid "b587754b-6bf3-4c90-8a27-c76019cea8ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "gate_nor_2in_8bit"
+				(path "/1dc696ed-d35e-495d-aad0-47f49dae0428"
+					(page "3")
 				)
 			)
 		)
@@ -1326,7 +1286,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
 			(at 62.23 34.8746 0)
 			(effects
 				(font
@@ -1385,7 +1345,7 @@
 		)
 	)
 	(sheet
-		(at 62.23 38.1)
+		(at 62.23 71.12)
 		(size 15.24 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1399,9 +1359,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "cda97178-1ecc-447c-8356-c40796c7bc42")
-		(property "Sheetname" "2nor2"
-			(at 62.23 37.3884 0)
+		(uuid "abad434e-cf2a-4ad0-8c8f-369a812ac1a1")
+		(property "Sheetname" "2nor4"
+			(at 62.23 70.4084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1409,8 +1369,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
-			(at 62.23 51.3846 0)
+		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+			(at 62.23 84.4046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1420,8 +1380,8 @@
 			)
 		)
 		(pin "A" input
-			(at 62.23 40.64 180)
-			(uuid "2f69bedb-e011-415f-a9c8-887ddc59c003")
+			(at 62.23 73.66 180)
+			(uuid "32ec3ad1-50a2-4c69-b758-26a5d3a4cc23")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1430,8 +1390,8 @@
 			)
 		)
 		(pin "Y" output
-			(at 77.47 44.45 0)
-			(uuid "f0270f0d-9e64-47bc-99d7-c84fcc0eba1c")
+			(at 77.47 77.47 0)
+			(uuid "65dc0025-83f5-40e2-9883-4e23e2c22fdc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1440,8 +1400,8 @@
 			)
 		)
 		(pin "B" input
-			(at 62.23 48.26 180)
-			(uuid "4b39f96c-4296-448d-b09c-1cbbd8f7ebc7")
+			(at 62.23 81.28 180)
+			(uuid "a2035060-9f7c-45f5-97d3-02ebed3c7e43")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1452,17 +1412,80 @@
 		(instances
 			(project "gate_nor_2in_8bit"
 				(path "/1dc696ed-d35e-495d-aad0-47f49dae0428"
-					(page "3")
+					(page "4")
 				)
 			)
-			(project ""
-				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "#")
+		)
+	)
+	(sheet
+		(at 62.23 119.38)
+		(size 15.24 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c0f90445-61d1-41dd-8f80-ee162a676cf7")
+		(property "Sheetname" "2nor7"
+			(at 62.23 118.6684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
+				(justify left bottom)
 			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "11")
+		)
+		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+			(at 62.23 132.6646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "A" input
+			(at 62.23 121.92 180)
+			(uuid "239dc26c-8a11-47e2-83c3-0d73c81fd271")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Y" output
+			(at 77.47 125.73 0)
+			(uuid "edd660c5-1e7a-4ec9-90a3-b23b18d4c7ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "B" input
+			(at 62.23 129.54 180)
+			(uuid "dee23863-90e2-49d6-943f-0f1d0b6c9805")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "gate_nor_2in_8bit"
+				(path "/1dc696ed-d35e-495d-aad0-47f49dae0428"
+					(page "7")
 				)
 			)
 		)
@@ -1482,7 +1505,7 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "d911c631-e38a-4c18-87fe-8052c5c88dac")
+		(uuid "f303c8a5-1eb6-4557-af39-4675c3903cca")
 		(property "Sheetname" "2nor5"
 			(at 62.23 86.9184 0)
 			(effects
@@ -1492,7 +1515,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
+		(property "Sheetfile" "../gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
 			(at 62.23 100.9146 0)
 			(effects
 				(font
@@ -1504,7 +1527,7 @@
 		)
 		(pin "A" input
 			(at 62.23 90.17 180)
-			(uuid "c5dca1cf-79af-436b-86e8-0c236e79c467")
+			(uuid "7226d54d-decb-4749-80b4-80d05eb4d293")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1514,7 +1537,7 @@
 		)
 		(pin "Y" output
 			(at 77.47 93.98 0)
-			(uuid "bbb21046-2b3d-4faf-95df-59caafaa83d8")
+			(uuid "7df262cf-0f4a-461f-b66e-e0c2704e3e34")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1524,7 +1547,7 @@
 		)
 		(pin "B" input
 			(at 62.23 97.79 180)
-			(uuid "4c505f4e-bddd-47c3-8804-16bb4f1a9a7e")
+			(uuid "677d1efe-c93e-47ad-8038-3ce7532c1d3f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1535,100 +1558,7 @@
 		(instances
 			(project "gate_nor_2in_8bit"
 				(path "/1dc696ed-d35e-495d-aad0-47f49dae0428"
-					(page "6")
-				)
-			)
-			(project ""
-				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "#")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "14")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 62.23 54.61)
-		(size 15.24 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "ff81e12a-b35f-440a-af6c-ce155613e238")
-		(property "Sheetname" "2nor3"
-			(at 62.23 53.8984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "../../modules/gates/gate_nor/gate_nor_2in_1bit/gate_nor_2in.kicad_sch"
-			(at 62.23 67.8946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "A" input
-			(at 62.23 57.15 180)
-			(uuid "6e7c2d52-f48d-4455-94f7-30358bdc8557")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Y" output
-			(at 77.47 60.96 0)
-			(uuid "78eae28f-bb75-4ff0-a008-3557141e5ecb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "B" input
-			(at 62.23 64.77 180)
-			(uuid "5fcc2b34-5c83-499a-b5c0-f641ae5a4905")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "gate_nor_2in_8bit"
-				(path "/1dc696ed-d35e-495d-aad0-47f49dae0428"
-					(page "4")
-				)
-			)
-			(project ""
-				(path "/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "#")
-				)
-			)
-			(project "main_logic"
-				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/b0b24703-6682-42ff-bfe8-9b2bd3fa2617"
-					(page "12")
+					(page "5")
 				)
 			)
 		)
