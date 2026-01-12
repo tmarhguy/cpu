@@ -14,4 +14,4 @@ This directory contains all project documentation organized by category.
 - [Architecture Overview](architecture/overview.md)
 - [Opcode Map](../spec/opcode/opcode_table.md)
 - [Bill of Materials](build-notes/bom.md)
-
+- [Bring-Up Checklist](build-notes/bringup.md)
