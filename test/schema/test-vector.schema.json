@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ALU test vector file",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/testVector"
+    },
+    {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/testVector"
+      },
+      "minItems": 1
+    },
+    {
+      "type": "object",
+      "required": ["vectors"],
+      "properties": {
+        "vectors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/testVector"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "testVector": {
+      "type": "object",
+      "required": [
+        "test_name",
+        "A",
+        "B",
+        "opcode",
+        "expected_result",
+        "expected_flags"
+      ],
+      "properties": {
+        "test_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "A": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "B": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "opcode": {
+          "type": "string",
+          "pattern": "^[01]{4,8}$"
+        },
+        "expected_result": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "expected_flags": {
+          "type": "object",
+          "required": ["carry", "overflow", "zero", "negative"],
+          "properties": {
+            "carry": {"type": "boolean"},
+            "overflow": {"type": "boolean"},
+            "zero": {"type": "boolean"},
+            "negative": {"type": "boolean"}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
