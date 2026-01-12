@@ -12,6 +12,7 @@ This directory contains all project documentation organized by category.
 ## Quick Links
 
 - [Architecture Overview](architecture/overview.md)
-- [Verification Procedures](verification/procedures.md)
+- [Schematics & Simulations](architecture/schematics.md)
 - [Opcode Map](../spec/opcode/opcode_table.md)
+- [Opcode Status](verification/opcode-status.md)
 - [Bill of Materials](build-notes/bom.md)
