@@ -1,0 +1,132 @@
+[
+  {
+    "test_name": "LOGIC_NAND",
+    "A": 85,
+    "B": 15,
+    "opcode": "01000",
+    "expected_result": 250,
+    "expected_flags": {
+      "carry": false,
+      "overflow": false,
+      "zero": false,
+      "negative": true
+    }
+  },
+  {
+    "test_name": "LOGIC_NOR",
+    "A": 85,
+    "B": 15,
+    "opcode": "01001",
+    "expected_result": 160,
+    "expected_flags": {
+      "carry": false,
+      "overflow": false,
+      "zero": false,
+      "negative": true
+    }
+  },
+  {
+    "test_name": "LOGIC_XOR",
+    "A": 85,
+    "B": 15,
+    "opcode": "01010",
+    "expected_result": 90,
+    "expected_flags": {
+      "carry": false,
+      "overflow": false,
+      "zero": false,
+      "negative": false
+    }
+  },
+  {
+    "test_name": "LOGIC_PASS_A",
+    "A": 85,
+    "B": 15,
+    "opcode": "01011",
+    "expected_result": 85,
+    "expected_flags": {
+      "carry": false,
+      "overflow": false,
+      "zero": false,
+      "negative": false
+    }
+  },
+  {
+    "test_name": "LOGIC_PASS_B",
+    "A": 85,
+    "B": 15,
+    "opcode": "01100",
+    "expected_result": 15,
+    "expected_flags": {
+      "carry": false,
+      "overflow": false,
+      "zero": false,
+      "negative": false
+    }
+  },
+  {
+    "test_name": "LOGIC_AND",
+    "A": 85,
+    "B": 15,
+    "opcode": "01101",
+    "expected_result": 5,
+    "expected_flags": {
+      "carry": false,
+      "overflow": false,
+      "zero": false,
+      "negative": false
+    }
+  },
+  {
+    "test_name": "LOGIC_OR",
+    "A": 85,
+    "B": 15,
+    "opcode": "01110",
+    "expected_result": 95,
+    "expected_flags": {
+      "carry": false,
+      "overflow": false,
+      "zero": false,
+      "negative": false
+    }
+  },
+  {
+    "test_name": "LOGIC_XNOR",
+    "A": 85,
+    "B": 15,
+    "opcode": "01111",
+    "expected_result": 165,
+    "expected_flags": {
+      "carry": false,
+      "overflow": false,
+      "zero": false,
+      "negative": true
+    }
+  },
+  {
+    "test_name": "LOGIC_NOT_A",
+    "A": 85,
+    "B": 15,
+    "opcode": "10001",
+    "expected_result": 170,
+    "expected_flags": {
+      "carry": false,
+      "overflow": false,
+      "zero": false,
+      "negative": true
+    }
+  },
+  {
+    "test_name": "LOGIC_NOT_B",
+    "A": 85,
+    "B": 15,
+    "opcode": "10010",
+    "expected_result": 240,
+    "expected_flags": {
+      "carry": false,
+      "overflow": false,
+      "zero": false,
+      "negative": true
+    }
+  }
+]
