@@ -622,9 +622,8 @@ python -m pip install --upgrade pip
 python -m pip install jsonschema==4.21.1
 python tools/validate_test_vectors.py
 
-# Format-check Arduino firmware sketches (requires clang-format 18.1.5)
-python -m pip install clang-format==18.1.5
-clang-format --dry-run --Werror --style=file $(git ls-files '*.ino')
+# Format-check Arduino firmware sketches (requires Arduino CLI 0.35.3)
+arduino-cli format --check $(git ls-files '*.ino')
 
 # Run the test runner when it exists
 if [ -f tools/run_tests.sh ]; then
