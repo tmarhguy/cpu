@@ -179,20 +179,24 @@ Logic operation test vectors
 
 </div>
 
+Each JSON file contains an array of test vectors. The `opcode` field is a 5-bit binary string matching `spec/opcode/opcode_table.md`.
+
 ```json
-{
-  "test_name": "ADD_01",
-  "A": 42,
-  "B": 23,
-  "opcode": "0000",
-  "expected_result": 65,
-  "expected_flags": {
-    "carry": false,
-    "overflow": false,
-    "zero": false,
-    "negative": false
+[
+  {
+    "test_name": "ADD_01",
+    "A": 42,
+    "B": 23,
+    "opcode": "00000",
+    "expected_result": 65,
+    "expected_flags": {
+      "carry": false,
+      "overflow": false,
+      "zero": false,
+      "negative": false
+    }
   }
-}
+]
 ```
 
 ---
@@ -218,3 +222,15 @@ Wrote results to results/test_results.json and results/test_results.csv
 ```
 
 Test vectors can be loaded by the firmware test runner for automated validation and regression testing.
+
+Run the reference validator (uses the opcode table definitions):
+
+```bash
+python3 test/run_vectors.py
+```
+
+To validate a specific file:
+
+```bash
+python3 test/run_vectors.py test/add_sub.json
+```
