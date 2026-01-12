@@ -1,7 +1,7 @@
 /*
  * Back-end Arduino Controller
  * Reads ALU outputs and displays results
- * 
+ *
  * Author: Tyrone Marhguy
  * Project: Discrete ALU CPU
  */
@@ -18,5 +18,5 @@ void setup() {
 }
 
 void loop() {
-  
+
 }
