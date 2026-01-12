@@ -19,10 +19,15 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install jsonschema==4.21.1 clang-format==18.1.5
+          python -m pip install jsonschema==4.21.1
 
       - name: Validate test vector schema
         run: python tools/validate_test_vectors.py
+
+      - name: Set up Arduino CLI
+        uses: arduino/setup-arduino-cli@v1
+        with:
+          version: "0.35.3"
 
       - name: Check Arduino formatting
         run: |
@@ -32,7 +37,7 @@ jobs:
             echo "No Arduino sketches found; skipping format check."
             exit 0
           fi
-          clang-format --dry-run --Werror --style=file "${files[@]}"
+          arduino-cli format --check "${files[@]}"
 
       - name: Run test runner (if present)
         run: |
