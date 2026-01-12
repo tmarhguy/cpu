@@ -450,6 +450,7 @@ cpu/
    - Open `firmware/controller-input/` in Arduino IDE
    - Open `firmware/controller-display/` in Arduino IDE
    - Upload to respective Arduino boards
+   - See [Firmware Build Notes](docs/build-notes/firmware.md) for pin mappings and CLI steps
 
 ---
 
