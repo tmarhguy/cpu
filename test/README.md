@@ -203,4 +203,18 @@ Logic operation test vectors
 
 </div>
 
+Run the test runner against the JSON vectors and export results for CI consumption:
+
+```bash
+python3 tools/run_tests.py --vectors-dir test --output-dir results
+```
+
+Expected output:
+
+```text
+PASS add_sub.json: 4/4
+Summary: 4 passed, 0 failed
+Wrote results to results/test_results.json and results/test_results.csv
+```
+
 Test vectors can be loaded by the firmware test runner for automated validation and regression testing.
