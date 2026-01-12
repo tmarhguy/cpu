@@ -605,12 +605,32 @@ This keeps the input system clean, efficient, and consistent with the project's 
 
 ### Test Vectors
 
-Test vectors are stored in JSON format in the `tests/` directory:
+Test vectors are stored in JSON format in the `test/` directory:
 
 - **add_sub.json**: Arithmetic operation test vectors
 - **logic_ops.json**: Logic operation test vectors (future)
 
-See [tests/README.md](tests/README.md) for detailed test vector format and usage.
+See [test/README.md](test/README.md) for detailed test vector format and usage.
+
+### Local Validation
+
+Run the same checks as CI with explicit tool versions:
+
+```bash
+# Validate JSON test vectors
+python -m pip install --upgrade pip
+python -m pip install jsonschema==4.21.1
+python tools/validate_test_vectors.py
+
+# Format-check Arduino firmware sketches (requires clang-format 18.1.5)
+python -m pip install clang-format==18.1.5
+clang-format --dry-run --Werror --style=file $(git ls-files '*.ino')
+
+# Run the test runner when it exists
+if [ -f tools/run_tests.sh ]; then
+  bash tools/run_tests.sh
+fi
+```
 
 ---
 
