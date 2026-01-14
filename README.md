@@ -23,15 +23,6 @@ _A complete 8-bit Arithmetic Logic Unit (ALU) designed and built from discrete t
 ## The Story Behind the Project
 
 </div>
-
-I woke up to a long post from a debate with a friend the night before. He was telling me to my face many times how CS is the mother of all programs and applications—basically, computer engineering is just a child who knows how to play every instrument, but not a prodigy at either one.
-
-Well, in an attempt to present my argument in our courtroom (the WhatsApp group), I spent the next months designing a CPU!
-
-Yes, I built an 8-bit computer CPU from 800+ transistors all the way up, and it can add two numbers!
-
-I love our CS students, I love them, but if you can write binary code, it's because there was a non-prodigy who wired the computer for you. It's beyond theory. Before, what do you think between CS and Comp Engineering? I think they are brothers, maybe not always agreeable, but united by function, distinct in capacity.
-
 ---
 
 ## Table of Contents
