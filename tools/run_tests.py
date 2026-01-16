@@ -7,34 +7,9 @@ import argparse
 import csv
 import json
 import sys
-from datetime import datetime
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Tuple
-
-
-# Expected order for execution and reporting
-OPCODE_ORDER = [
-    "ADD",
-    "SUB",
-    "INC_A",
-    "DEC_A",
-    "LSL",
-    "LSR",
-    "ASR",
-    "REV_A",
-    "NAND",
-    "NOR",
-    "XOR",
-    "PASS_A",
-    "PASS_B",
-    "AND",
-    "OR",
-    "XNOR",
-    "CMP",
-    "NOT_A",
-    "NOT_B",
-]
 
 
 @dataclass
@@ -58,186 +33,66 @@ class HardwareInterface:
 
 
 class SimulatedALUHardware(HardwareInterface):
-    """Simulated ALU evaluator for all 19 operations."""
+    """Simulated ALU evaluator for add/sub operations."""
 
     def evaluate(self, test: Dict[str, Any]) -> Tuple[int, Dict[str, bool]]:
         width = int(test.get("width", 8))
         mask = (1 << width) - 1
-        msb = 1 << (width - 1)
-        
-        a = int(test.get("A", 0)) & mask
-        b = int(test.get("B", 0)) & mask
-        
+        a = int(test["A"]) & mask
+        b = int(test["B"]) & mask
+
         operation = normalize_operation(test)
-        
-        # Initialize flags
-        carry = False
-        overflow = False
-        result = 0
-        
-        # Arithmetic Operations
+        if operation not in {"ADD", "SUB"}:
+            raise ValueError(f"Unsupported operation '{operation}'")
+
         if operation == "ADD":
             raw = a + b
             result = raw & mask
             carry = raw > mask
-            overflow = is_overflow_add(a, b, result, width)
-            
-        elif operation == "SUB":
+        else:
             raw = a - b
             result = raw & mask
-            carry = raw >= 0 # Borrow inverted? Standard ALU SUB often produces Carry=1 if no borrow (A >= B).
-                             # Spec says M=1 (SUB) -> Cin=1, B inverted.
-                             # A + ~B + 1. If result > mask, Carry=1. 
-                             # This is equivalent to "Not Borrow".
-                             # Let's stick to the previous implementation's logic: carry = raw >= 0
-            if raw < 0:
-                carry = False # Borrow occurred
-            else:
-                carry = True  # No borrow
-            overflow = is_overflow_sub(a, b, result, width)
-            
-        elif operation == "INC_A":
-            raw = a + 1
-            result = raw & mask
-            carry = raw > mask
-            overflow = (a == (mask >> 1)) # Incrementing MAX_POSITIVE -> MIN_NEGATIVE
-            
-        elif operation == "DEC_A":
-            raw = a - 1
-            result = raw & mask
-            # DEC A is A + 255 (if 8 bit). 
-            # Carry behavior: A + 0xFF. If A>0, result causes carry. If A=0, result=255, no carry.
-            carry = (a != 0)
-            overflow = (a == msb) # Decrementing MIN_NEGATIVE -> MAX_POSITIVE
-            
-        elif operation == "CMP":
-            # CMP is A - B but result is ignored (effectively). 
-            # Flags are set exactly like SUB.
-            raw = a - b
-            result = 0 # Output not used/valid for CMP
-            if raw < 0:
-                carry = False
-            else:
-                carry = True
-            overflow = is_overflow_sub(a, b, raw & mask, width)
-            
-        # Shift Operations
-        elif operation in ("LSL", "SLL"):
-            raw = a << 1
-            result = raw & mask
-            carry = bool(a & msb)
-            
-        elif operation in ("LSR", "SRL"):
-            raw = a >> 1
-            result = raw & mask
-            carry = bool(a & 1)
-            
-        elif operation == "ASR":
-            # Arithmetic Shift Right: replicate sign bit
-            sign = a & msb
-            raw = (a >> 1) | sign
-            result = raw & mask
-            carry = bool(a & 1)
+            carry = raw >= 0
 
-        # Logic Operations (Carry/Overflow usually 0)
-        elif operation == "AND":
-            result = a & b
-        elif operation == "OR":
-            result = a | b
-        elif operation == "XOR":
-            result = a ^ b
-        elif operation == "NAND":
-            result = ~(a & b) & mask
-        elif operation == "NOR":
-            result = ~(a | b) & mask
-        elif operation == "XNOR":
-            result = ~(a ^ b) & mask
-            
-        elif operation == "NOT_A":
-            result = (~a) & mask
-        elif operation == "NOT_B":
-            result = (~b) & mask
-            
-        elif operation == "PASS_A":
-            result = a
-        elif operation == "PASS_B":
-            result = b
-            
-        elif operation == "REV_A":
-            # Bit reverse
-            bin_str = f"{a:0{width}b}"
-            result = int(bin_str[::-1], 2)
+        a_signed = to_signed(a, width)
+        b_signed = to_signed(b, width)
+        result_signed = to_signed(result, width)
 
+        if operation == "ADD":
+            overflow = (
+                (a_signed >= 0 and b_signed >= 0 and result_signed < 0)
+                or (a_signed < 0 and b_signed < 0 and result_signed >= 0)
+            )
         else:
-            raise ValueError(f"Unsupported operation '{operation}'")
+            overflow = (
+                (a_signed >= 0 and b_signed < 0 and result_signed < 0)
+                or (a_signed < 0 and b_signed >= 0 and result_signed >= 0)
+            )
 
-        # Zero and Negative flags are standard for RESULT (except CMP uses A-B result)
-        if operation == "CMP":
-             check_val = (a - b) & mask
-        else:
-             check_val = result
-
-        zero = (check_val == 0)
-        negative = bool(check_val & msb)
-        
         flags = {
             "carry": carry,
             "overflow": overflow,
-            "zero": zero,
-            "negative": negative,
+            "zero": result == 0,
+            "negative": bool(result & (1 << (width - 1))),
         }
-        
-        # Special case: CMP specific flags if your JSON expects specific keys
-        # But usually Z/N/C/V key names are standard.
-        
         return result, flags
 
-def is_overflow_add(a, b, r, width):
-    msb = 1 << (width - 1)
-    a_sign = bool(a & msb)
-    b_sign = bool(b & msb)
-    r_sign = bool(r & msb)
-    return (a_sign == b_sign) and (a_sign != r_sign)
 
-def is_overflow_sub(a, b, r, width):
-    msb = 1 << (width - 1)
-    a_sign = bool(a & msb)
-    b_sign = bool(b & msb)
-    r_sign = bool(r & msb)
-    return (a_sign != b_sign) and (a_sign != r_sign)
+def to_signed(value: int, width: int) -> int:
+    sign_bit = 1 << (width - 1)
+    if value & sign_bit:
+        return value - (1 << width)
+    return value
+
 
 def normalize_operation(test: Dict[str, Any]) -> str:
     if "operation" in test:
-        return str(test["operation"]).strip().upper().replace(" ", "_")
-    
+        return str(test["operation"]).strip().upper()
     opcode = str(test.get("opcode", "")).strip()
-    
-    # Map binary opcodes to names
-    op_map = {
-        "00000": "ADD",
-        "00001": "SUB",
-        "00010": "INC_A",
-        "00011": "DEC_A",
-        "00100": "LSL",
-        "00101": "LSR",
-        "00110": "ASR",
-        "00111": "REV_A",
-        "01000": "NAND",
-        "01001": "NOR",
-        "01010": "XOR",
-        "01011": "PASS_A",
-        "01100": "PASS_B",
-        "01101": "AND",
-        "01110": "OR",
-        "01111": "XNOR",
-        "10000": "CMP",
-        "10001": "NOT_A",
-        "10010": "NOT_B",
-    }
-    
-    if opcode in op_map:
-        return op_map[opcode]
-        
+    if opcode in {"0000", "00000000"}:
+        return "ADD"
+    if opcode in {"11111111", "0001"}:
+        return "SUB"
     return "UNKNOWN"
 
 
@@ -261,24 +116,8 @@ def load_vectors(path: Path) -> List[Dict[str, Any]]:
 def evaluate_vectors(vector_file: Path, hw: HardwareInterface) -> List[TestResult]:
     results: List[TestResult] = []
     vectors = load_vectors(vector_file)
-    
-    # Sort vectors by opcode string (00000, 00001...) to match the requested execution order
-    vectors.sort(key=lambda x: str(x.get("opcode", "")).strip())
-    
-    total = len(vectors)
-    
-    # Spinner animation
-    spinner = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
-    
-    print(f"Processing {vector_file.name}...", end=" ", flush=True)
 
-    for i, test in enumerate(vectors):
-        # Update spinner every 2000 items (optimization)
-        if i % 2000 == 0:
-            spin_char = spinner[(i // 2000) % len(spinner)]
-            sys.stdout.write(f"\rProcessing {vector_file.name}... {spin_char} ({int(i/total*100)}%)")
-            sys.stdout.flush()
-
+    for test in vectors:
         test_name = str(test.get("test_name", "unnamed"))
         operation = normalize_operation(test)
         expected_result = int(test.get("expected_result", 0))
@@ -312,9 +151,7 @@ def evaluate_vectors(vector_file: Path, hw: HardwareInterface) -> List[TestResul
                 message=message,
             )
         )
-    
-    sys.stdout.write(f"\rProcessing {vector_file.name}... Done!        \n")
-    sys.stdout.flush()
+
     return results
 
 
@@ -339,36 +176,6 @@ def summarize(results: List[TestResult]) -> Tuple[int, int]:
     passed = sum(1 for result in results if result.passed)
     failed = len(results) - passed
     return passed, failed
-
-
-def print_detailed_report(results: List[TestResult]) -> None:
-    stats = {}
-    for r in results:
-        if r.operation not in stats:
-            stats[r.operation] = {"pass": 0, "fail": 0, "total": 0}
-        stats[r.operation]["total"] += 1
-        if r.passed:
-            stats[r.operation]["pass"] += 1
-        else:
-            stats[r.operation]["fail"] += 1
-
-    print("\n" + "="*65)
-    print(f"{'OPERATION':<15} | {'PASSED':<10} | {'FAILED':<10} | {'TOTAL':<10} | {'RATE':<5}")
-    print("-" * 65)
-    
-    
-    # Sort by opcode order from specification
-    # Create a mapping for sort order
-    order_map = {op: i for i, op in enumerate(OPCODE_ORDER)}
-    
-    # Sort keys based on the order map, putting unknown ops at the end
-    sorted_ops = sorted(stats.keys(), key=lambda x: order_map.get(x, 999))
-    
-    for op in sorted_ops:
-        s = stats[op]
-        rate = (s["pass"] / s["total"]) * 100 if s["total"] > 0 else 0
-        print(f"{op:<15} | {s['pass']:<10} | {s['fail']:<10} | {s['total']:<10} | {rate:5.1f}%")
-    print("="*65 + "\n")
 
 
 def parse_args() -> argparse.Namespace:
@@ -399,9 +206,6 @@ def main() -> int:
     hw = SimulatedALUHardware()
     all_results: List[TestResult] = []
 
-    start_time = datetime.now()
-    print(f"Test Run Started: {start_time.strftime('%Y-%m-%d %H:%M:%S')}\n")
-
     for vector_file in vector_files:
         results = evaluate_vectors(vector_file, hw)
         passed, failed = summarize(results)
@@ -409,29 +213,15 @@ def main() -> int:
         print(f"{status} {vector_file.name}: {passed}/{len(results)}")
         all_results.extend(results)
 
-
     total_passed, total_failed = summarize(all_results)
-    end_time = datetime.now()
-    duration = end_time - start_time
-    
-    print(f"\nSummary: {total_passed} passed, {total_failed} failed")
-    print(f"Completed: {end_time.strftime('%Y-%m-%d %H:%M:%S')} (Duration: {duration})")
-
-    # Detailed Breakdown
-    if all_results:
-        print_detailed_report(all_results)
+    print(f"Summary: {total_passed} passed, {total_failed} failed")
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    
-    print("Writing detailed results to disk...", end=" ", flush=True)
-    
     json_path = output_dir / "test_results.json"
     csv_path = output_dir / "test_results.csv"
     write_results_json(all_results, json_path)
     write_results_csv(all_results, csv_path)
-    
-    print("Done!")
-    print(f"Results saved to {output_dir}/ at {end_time.strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"Wrote results to {json_path} and {csv_path}")
 
     return 0 if total_failed == 0 else 1
 

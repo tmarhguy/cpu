@@ -12,10 +12,21 @@
 **Project Metrics:**
 [![Time](https://img.shields.io/badge/time-~280%20hours-9cf)](README.md#project-timeline) [![Duration](https://img.shields.io/badge/duration-6%20months-lightblue)](README.md#project-timeline) [![Cost](https://img.shields.io/badge/cost-%24450-ff6b6b)](docs/build-notes/bom.md)
 
-**Tyrone Marhguy** | Sophomore, Computer Engineering
-University of Pennsylvania | School of Engineering and Applied Science | Expected Graduation: May 2028
-[tmarhguy.com](https://tmarhguy.com) | [LinkedIn](https://linkedin.com/in/tmarhguy) | [Twitter](https://twitter.com/marhguy_tyrone) | [Instagram](https://instagram.com/tmarhguy) | [Substack](https://tmarhguy.substack.com) | Email: tmarhguy@gmail.com | tmarhguy@seas.upenn.edu
+**University of Pennsylvania, School of Engineering and Applied Science**
 
+**Computer Engineering - From Transistors to Systems**
+
+_A complete 8-bit Arithmetic Logic Unit (ALU) designed and built from discrete transistors. This project demonstrates the fundamental principles of digital logic design, starting with 1-bit adders and scaling to a fully functional 8-bit arithmetic unit with efficient 2's complement subtraction. All design decisions are justified through comprehensive transistor cost analysis._
+
+</div>
+
+---
+
+<div align="center">
+
+## The Story Behind the Project
+
+</div>
 ---
 
 ## Table of Contents
@@ -813,22 +824,30 @@ See [POWER.md](docs/POWER.md) for complete analysis.
 
 **Discrete Components:**
 
-- 2N7000 NMOS transistors
-- BS250 PMOS transistors
-- 74HC157 (2:1 MUX), 74HC574 (registers in external system)
-- Resistors, capacitors, LEDs
+Test vectors are stored in JSON format in the `test/` directory:
 
 **Verification & Tools:**
 
-- Python 3.7+ - Test automation (1.24M vectors), CLI interface
-- pytest - Test framework
-- `alu_cli.py` - Interactive command-line ALU operations
-- Arduino - External I/O control
+See [test/README.md](test/README.md) for detailed test vector format and usage.
 
-**Fabrication:**
+### Local Validation
 
-- JLCPCB - PCB manufacturing (270×270mm)
-- DigiKey/Mouser - Component sourcing
+Run the same checks as CI with explicit tool versions:
+
+```bash
+# Validate JSON test vectors
+python -m pip install --upgrade pip
+python -m pip install jsonschema==4.21.1
+python tools/validate_test_vectors.py
+
+# Format-check Arduino firmware sketches (requires Arduino CLI 0.35.3)
+arduino-cli format --check $(git ls-files '*.ino')
+
+# Run the test runner when it exists
+if [ -f tools/run_tests.sh ]; then
+  bash tools/run_tests.sh
+fi
+```
 
 ---
 

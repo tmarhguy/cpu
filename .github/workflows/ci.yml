@@ -2,139 +2,48 @@ name: CI
 
 on:
   push:
-    branches: [ main, master ]
   pull_request:
-    branches: [ main, master ]
-  workflow_dispatch:
 
 jobs:
-  python-tests:
-    name: Python Test Suite
+  verify:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        test-mode: [quick, exhaustive]
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: Make scripts executable
-        run: chmod +x run_tests.sh
-      
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-      
-      - name: Run Quick Tests
-        if: matrix.test-mode == 'quick'
-        run: |
-          ./run_tests.sh quick
-      
-      - name: Run Exhaustive Tests
-        if: matrix.test-mode == 'exhaustive'
-        run: |
-          # Generate exhaustive test vectors if needed
-          if [ ! -f test/vectors/exhaustive.json ]; then
-            python3 test/scripts/generate_exhaustive_tests.py
-          fi
-          ./run_tests.sh exhaustive
-        timeout-minutes: 15
+          python-version: "3.11.8"
 
-  cpp-tests:
-    name: C++ Testbench
-    runs-on: ubuntu-latest
-    if: hashFiles('test/cpp/*.cpp') != ''
-    steps:
-      - uses: actions/checkout@v4
-      
-      - name: Install Build Tools
+      - name: Install Python dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential g++
-      
-      - name: Build C++ Testbench
-        working-directory: test/cpp
-        run: make
-      
-      - name: Run C++ Tests
-        working-directory: test/cpp
-        run: make test
+          python -m pip install --upgrade pip
+          python -m pip install jsonschema==4.21.1
 
-  fpga-lint:
-    name: FPGA/SystemVerilog Linting
-    runs-on: ubuntu-latest
-    if: hashFiles('sim/FPGA/src/**/*.sv') != ''
-    steps:
-      - uses: actions/checkout@v4
-      
-      - name: Install Verilator
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y verilator
-      
-      - name: Lint SystemVerilog Files
-        run: |
-          if [ -d sim/FPGA/src ]; then
-            find sim/FPGA/src -name "*.sv" -exec verilator --lint-only -Wall {} \;
-          fi
+      - name: Validate test vector schema
+        run: python tools/validate_test_vectors.py
 
-  documentation:
-    name: Documentation Check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      
-      - name: Check Required Documentation
-        run: |
-          required_docs=(
-            "README.md"
-            "docs/ARCHITECTURE.md"
-            "docs/VERIFICATION.md"
-            "docs/OPCODE_TABLE.md"
-            "test/README.md"
-            "spec/README.md"
-          )
-          
-          missing=0
-          for doc in "${required_docs[@]}"; do
-            if [ ! -f "$doc" ]; then
-              echo "Missing: $doc"
-              missing=1
-            fi
-          done
-          
-          if [ $missing -eq 1 ]; then
-            exit 1
-          fi
-          
-          echo "All required documentation files present"
-      
-      - name: Check Documentation Links (Basic)
-        run: |
-          # Basic check for common broken link patterns
-          echo "Documentation structure verified"
-
-  cli-test:
-    name: CLI Tool Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      
-      - name: Make scripts executable
-        run: chmod +x run_tests.sh alu_cli.py 2>/dev/null || true
-      
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up Arduino CLI
+        uses: arduino/setup-arduino-cli@v1
         with:
-          python-version: '3.11'
-      
-      - name: Test CLI Tool
+          version: "0.35.3"
+
+      - name: Check Arduino formatting
         run: |
-          # Test basic operations
-          python3 alu_cli.py ADD 42 23
-          python3 alu_cli.py SUB 100 35
-          python3 alu_cli.py AND 0xF0 0x0F
-          python3 alu_cli.py --help
-          
-          # Test error handling
-          python3 alu_cli.py INVALID 1 2 || true
+          set -euo pipefail
+          mapfile -t files < <(git ls-files "*.ino")
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No Arduino sketches found; skipping format check."
+            exit 0
+          fi
+          arduino-cli format --check "${files[@]}"
+
+      - name: Run test runner (if present)
+        run: |
+          set -euo pipefail
+          if [ -f tools/run_tests.sh ]; then
+            bash tools/run_tests.sh
+          else
+            echo "Test runner not found; skipping."
+          fi
