@@ -82,3 +82,11 @@ test_results/
 !spec/**/*.csv
 *.csv
 
+
+# Large test result files (too big for GitHub)
+test/vectors/exhaustive.json
+results/test_results.json
+
+# Large video files (>100MB)
+media/videos/demos/main-demo-logism-evolution-all-opcodes.mp4
+media/videos/process/kicad-8bit-nor-and spice simulation.mp4
