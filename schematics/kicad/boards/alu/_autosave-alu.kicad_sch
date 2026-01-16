@@ -1,0 +1,357 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "ccba897c-0afe-4800-bf6c-6f198831a830")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 77.47 41.275)
+		(size 12.7 13.335)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2f848cbc-864c-441f-9e69-47e3e0322f3b")
+		(property "Sheetname" "led"
+			(at 77.47 40.5634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../led_panel/led_panel_1/led_panel_1.kicad_sch"
+			(at 77.47 55.1946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "alu"
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830"
+					(page "114")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 20.32)
+		(size 12.7 12.065)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "30f0feea-95cb-4a2f-aac1-eea6203246c2")
+		(property "Sheetname" "logic"
+			(at 22.86 19.6084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../main_logic/main_logic.kicad_sch"
+			(at 22.86 32.9696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "alu"
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 125.73 38.1)
+		(size 12.7 15.875)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "34660d2d-f4b7-4938-8be6-a10c79be1e1b")
+		(property "Sheetname" "led4"
+			(at 125.73 37.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../led_panel/led_panel_4/led_panel_4.kicad_sch"
+			(at 125.73 54.5596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "alu"
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830"
+					(page "170")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 124.46 19.05)
+		(size 12.7 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "360faded-22a1-4210-8c7e-c6f3bc270931")
+		(property "Sheetname" "add"
+			(at 124.46 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../add_sub/add_sub.kicad_sch"
+			(at 124.46 31.0646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "alu"
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830"
+					(page "56")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 70.485 18.415)
+		(size 13.335 13.335)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "47fe158c-fbc5-4294-a7be-acf66ed611cb")
+		(property "Sheetname" "control"
+			(at 70.485 17.7034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../main_control/main_control.kicad_sch"
+			(at 70.485 32.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "alu"
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830"
+					(page "42")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 97.79 17.145)
+		(size 12.7 12.065)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "84ceaccc-7b9f-4c24-a7fe-1cf7f94b8b9b")
+		(property "Sheetname" "flag"
+			(at 97.79 16.4334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../flags/flags.kicad_sch"
+			(at 97.79 29.7946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "alu"
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830"
+					(page "52")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 97.79 40.005)
+		(size 12.7 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "967e7ab6-a3a5-470b-ba47-1487fb6ab563")
+		(property "Sheetname" "led3"
+			(at 97.79 39.2934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../led_panel/led_panel_3/led_panel_3.kicad_sch"
+			(at 97.79 54.5596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "alu"
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830"
+					(page "164")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 58.42 41.91)
+		(size 12.7 13.335)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9fafb843-517e-42a8-ba01-7984de3011bf")
+		(property "Sheetname" "led1"
+			(at 58.42 41.1984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../led_panel/led_panel_1/led_panel_1.kicad_sch"
+			(at 58.42 55.8296 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "alu"
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830"
+					(page "134")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

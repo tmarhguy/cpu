@@ -1,0 +1,56 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "ccba897c-0afe-4800-bf6c-6f198831a830")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 22.86 20.32)
+		(size 12.7 12.065)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "30f0feea-95cb-4a2f-aac1-eea6203246c2")
+		(property "Sheetname" "logic"
+			(at 22.86 19.6084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../main_logic/main_logic.kicad_sch"
+			(at 22.86 32.9696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "alu"
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

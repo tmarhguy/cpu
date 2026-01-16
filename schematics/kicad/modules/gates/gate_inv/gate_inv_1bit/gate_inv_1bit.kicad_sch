@@ -1,0 +1,2092 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "91c6beb6-7f64-405a-ad9b-2f4d375cbae0")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Simulation_SPICE:NMOS"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "NMOS"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "N-MOSFET transistor, drain/source/gate"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "NMOS"
+				(at 0 -17.145 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Type" "MOS1"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=D 2=G 3=S"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET simulation"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "NMOS_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NMOS_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Simulation_SPICE:PMOS"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "PMOS"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "P-MOSFET transistor, drain/source/gate"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "PMOS"
+				(at 0 -17.145 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Type" "MOS1"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=D 2=G 3=S"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET simulation"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PMOS_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PMOS_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:VCC"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VCC"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VCC\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VCC_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VCC_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 91.44 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a4f3dae-1e27-4df5-8820-b2d738cd458a")
+	)
+	(junction
+		(at 99.06 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a5a7d33-49e9-4cbe-8dd1-bbcf749bd879")
+	)
+	(wire
+		(pts
+			(xy 91.44 58.42) (xy 91.44 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c037109-280f-47e1-8283-8cd502b46592")
+	)
+	(wire
+		(pts
+			(xy 99.06 59.69) (xy 107.95 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cbe886a-0c45-49dc-a5ff-efcb7c4798d2")
+	)
+	(wire
+		(pts
+			(xy 91.44 54.61) (xy 91.44 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c21264e-e3ec-44aa-9305-7a8043e0113f")
+	)
+	(wire
+		(pts
+			(xy 80.01 58.42) (xy 91.44 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcf7e4ec-1961-4439-9acd-c4f96c51b967")
+	)
+	(hierarchical_label "A"
+		(shape input)
+		(at 80.01 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8c7eade5-4bb1-4ceb-a916-865b4d513721")
+	)
+	(hierarchical_label "Y"
+		(shape output)
+		(at 107.95 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b3be7f40-49cf-47ca-b917-2929e65d1e8d")
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 96.52 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "018c1359-3d3c-4ed6-b7b3-fd5a6fe588a4")
+		(property "Reference" "Q5106"
+			(at 102.87 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NMOS"
+			(at 102.87 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
+			(at 101.6 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 96.52 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 96.52 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 96.52 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "MOS1"
+			(at 96.52 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 96.52 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ba66472d-a385-45e4-8a2b-e26f180ef1ba")
+		)
+		(pin "1"
+			(uuid "de60cd29-6d69-4776-8f33-db7ecae332ed")
+		)
+		(pin "2"
+			(uuid "b1f6135e-5fcc-4ca3-a410-6b5188705feb")
+		)
+		(instances
+			(project "add_sub"
+				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/96b80627-00a4-4943-acd8-0aaffb7584a8"
+					(reference "Q5106")
+					(unit 1)
+				)
+				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/dd8f2a91-442d-4910-8474-3896dc3f1a74"
+					(reference "Q4906")
+					(unit 1)
+				)
+			)
+			(project "led_panel_1"
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/218b1012-688b-456d-a002-99b870e3f91e"
+					(reference "Q1602")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/3cb5318d-7d11-4985-8b4f-10363e58439c"
+					(reference "Q2002")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/6fab1684-a99a-45a5-826c-4a0ab400ce58"
+					(reference "Q1402")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/73415f43-fa7c-48ee-a1db-027aad515fd0"
+					(reference "Q2202")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/7a20d938-50d3-45eb-aea5-29f66b15ee51"
+					(reference "Q1902")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/93785959-19e4-44ac-a78e-9c302e76d388"
+					(reference "Q1702")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/94efcb2c-3873-4c22-a4fe-03cfdeb86574"
+					(reference "Q1302")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/a227ac16-aa2d-4eb8-a04b-c2e86bd63208"
+					(reference "Q1202")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/a6eab0e8-ace3-4b1e-8fbf-bf8a9d91c04b"
+					(reference "Q2402")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/acc262c1-3630-4e23-9331-5954a0579a71"
+					(reference "Q1102")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/bddb133b-7bae-4891-a02a-0e40f83d1f98"
+					(reference "Q1502")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/cfc208ad-e112-4557-9d03-0d07473c97e3"
+					(reference "Q2102")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/ddc058e6-f3a0-4400-a1a6-ea0fde197af9"
+					(reference "Q2302")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/fa6b33b4-8985-4950-b03e-3451064fbf9b"
+					(reference "Q1802")
+					(unit 1)
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/99dbd45c-8760-4ff5-9139-add98e67407e"
+					(reference "Q3106")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/e9f53ae4-1679-4057-9ac8-fa20ef8d337e"
+					(reference "Q3906")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/12baccda-de61-4ff2-89c1-cc980ff8bc59"
+					(reference "Q2102")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/3a2fa2a6-4027-46c4-90cc-58cbe339a8cc"
+					(reference "Q2002")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/60421d18-f918-422e-9acf-6291f4552ab2"
+					(reference "Q1902")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/7ca7b9d9-dd96-40f5-80e5-151f81d53068"
+					(reference "Q2203")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/82f3ee1c-c2d2-4617-a9e4-0cb55d40f270"
+					(reference "Q2204")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cbe845e2-fbfa-4e99-b5aa-42ea773ed407"
+					(reference "Q2502")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cfb92fbf-905c-43ce-8707-6acd4a04428b"
+					(reference "Q2302")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/e8076ae0-d234-4675-a580-3fff14bf2f4c"
+					(reference "Q2402")
+					(unit 1)
+				)
+			)
+			(project "led_panel_2"
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/1979c8a0-cd4d-4f47-9aa5-f3a82bfb084e"
+					(reference "Q2102")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/363116f6-af4d-474a-82d5-664e26ce9439"
+					(reference "Q1202")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/3b05bd4b-0c58-4f24-a17b-e2a3ced789a7"
+					(reference "Q1802")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/671ad17b-f5f8-4b86-ac05-f7acfc1e1c2c"
+					(reference "Q302")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/786a2f8b-d0f4-4b2c-81fb-11eab9b6e626"
+					(reference "Q1902")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/7c0d05d8-e134-4120-8452-2dc1fcdd5141"
+					(reference "Q1002")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/82b2422f-7547-4e72-89b6-369052d7b3a9"
+					(reference "Q1602")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/8e94ed56-2852-4f97-8778-eb4e4ca74332"
+					(reference "Q802")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/b4621820-0c74-4aee-8c12-c13ae46d8656"
+					(reference "Q1402")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/be8fa8f1-c026-49e9-92bf-ada2da69f745"
+					(reference "Q902")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/cb2f7414-9e13-4d7b-94cb-e19f004e0de2"
+					(reference "Q1302")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/e37835ae-7ab6-48da-9b5b-ecbeac656232"
+					(reference "Q602")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/e7f89a61-4781-4cf6-a6c5-6b0050295fd5"
+					(reference "Q702")
+					(unit 1)
+				)
+			)
+			(project "add_sub"
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/99dbd45c-8760-4ff5-9139-add98e67407e"
+					(reference "Q5106")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/e9f53ae4-1679-4057-9ac8-fa20ef8d337e"
+					(reference "Q5106")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/12baccda-de61-4ff2-89c1-cc980ff8bc59"
+					(reference "Q5106")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/3a2fa2a6-4027-46c4-90cc-58cbe339a8cc"
+					(reference "Q5106")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/60421d18-f918-422e-9acf-6291f4552ab2"
+					(reference "Q5106")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/7ca7b9d9-dd96-40f5-80e5-151f81d53068"
+					(reference "Q5106")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/82f3ee1c-c2d2-4617-a9e4-0cb55d40f270"
+					(reference "Q5106")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cbe845e2-fbfa-4e99-b5aa-42ea773ed407"
+					(reference "Q5106")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cfb92fbf-905c-43ce-8707-6acd4a04428b"
+					(reference "Q5106")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/e8076ae0-d234-4675-a580-3fff14bf2f4c"
+					(reference "Q5106")
+					(unit 1)
+				)
+			)
+			(project "main_control"
+				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/c953f248-6ec6-4063-88a9-6cf78c9a3ffe"
+					(reference "Q802")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "04a4f4dd-76b1-4815-9b2f-f58025010aef")
+		(property "Reference" "#PWR05105"
+			(at 99.06 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab2da007-866f-4c4c-8465-da5384c751ce")
+		)
+		(instances
+			(project "add_sub"
+				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/96b80627-00a4-4943-acd8-0aaffb7584a8"
+					(reference "#PWR05105")
+					(unit 1)
+				)
+				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/dd8f2a91-442d-4910-8474-3896dc3f1a74"
+					(reference "#PWR04905")
+					(unit 1)
+				)
+			)
+			(project "led_panel_1"
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/218b1012-688b-456d-a002-99b870e3f91e"
+					(reference "#PWR01602")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/3cb5318d-7d11-4985-8b4f-10363e58439c"
+					(reference "#PWR02002")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/6fab1684-a99a-45a5-826c-4a0ab400ce58"
+					(reference "#PWR01402")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/73415f43-fa7c-48ee-a1db-027aad515fd0"
+					(reference "#PWR02202")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/7a20d938-50d3-45eb-aea5-29f66b15ee51"
+					(reference "#PWR01902")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/93785959-19e4-44ac-a78e-9c302e76d388"
+					(reference "#PWR01702")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/94efcb2c-3873-4c22-a4fe-03cfdeb86574"
+					(reference "#PWR01302")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/a227ac16-aa2d-4eb8-a04b-c2e86bd63208"
+					(reference "#PWR01202")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/a6eab0e8-ace3-4b1e-8fbf-bf8a9d91c04b"
+					(reference "#PWR02402")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/acc262c1-3630-4e23-9331-5954a0579a71"
+					(reference "#PWR01102")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/bddb133b-7bae-4891-a02a-0e40f83d1f98"
+					(reference "#PWR01502")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/cfc208ad-e112-4557-9d03-0d07473c97e3"
+					(reference "#PWR02102")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/ddc058e6-f3a0-4400-a1a6-ea0fde197af9"
+					(reference "#PWR02302")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/fa6b33b4-8985-4950-b03e-3451064fbf9b"
+					(reference "#PWR01802")
+					(unit 1)
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/99dbd45c-8760-4ff5-9139-add98e67407e"
+					(reference "#PWR03104")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/e9f53ae4-1679-4057-9ac8-fa20ef8d337e"
+					(reference "#PWR03905")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/12baccda-de61-4ff2-89c1-cc980ff8bc59"
+					(reference "#PWR02108")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/3a2fa2a6-4027-46c4-90cc-58cbe339a8cc"
+					(reference "#PWR02002")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/60421d18-f918-422e-9acf-6291f4552ab2"
+					(reference "#PWR01916")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/7ca7b9d9-dd96-40f5-80e5-151f81d53068"
+					(reference "#PWR02203")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/82f3ee1c-c2d2-4617-a9e4-0cb55d40f270"
+					(reference "#PWR02204")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cbe845e2-fbfa-4e99-b5aa-42ea773ed407"
+					(reference "#PWR02508")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cfb92fbf-905c-43ce-8707-6acd4a04428b"
+					(reference "#PWR02302")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/e8076ae0-d234-4675-a580-3fff14bf2f4c"
+					(reference "#PWR02402")
+					(unit 1)
+				)
+			)
+			(project "led_panel_2"
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/1979c8a0-cd4d-4f47-9aa5-f3a82bfb084e"
+					(reference "#PWR02102")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/363116f6-af4d-474a-82d5-664e26ce9439"
+					(reference "#PWR01202")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/3b05bd4b-0c58-4f24-a17b-e2a3ced789a7"
+					(reference "#PWR01802")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/671ad17b-f5f8-4b86-ac05-f7acfc1e1c2c"
+					(reference "#PWR0302")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/786a2f8b-d0f4-4b2c-81fb-11eab9b6e626"
+					(reference "#PWR01902")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/7c0d05d8-e134-4120-8452-2dc1fcdd5141"
+					(reference "#PWR01002")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/82b2422f-7547-4e72-89b6-369052d7b3a9"
+					(reference "#PWR01602")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/8e94ed56-2852-4f97-8778-eb4e4ca74332"
+					(reference "#PWR0802")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/b4621820-0c74-4aee-8c12-c13ae46d8656"
+					(reference "#PWR01402")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/be8fa8f1-c026-49e9-92bf-ada2da69f745"
+					(reference "#PWR0902")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/cb2f7414-9e13-4d7b-94cb-e19f004e0de2"
+					(reference "#PWR01302")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/e37835ae-7ab6-48da-9b5b-ecbeac656232"
+					(reference "#PWR0602")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/e7f89a61-4781-4cf6-a6c5-6b0050295fd5"
+					(reference "#PWR0702")
+					(unit 1)
+				)
+			)
+			(project "add_sub"
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/99dbd45c-8760-4ff5-9139-add98e67407e"
+					(reference "#PWR05105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/e9f53ae4-1679-4057-9ac8-fa20ef8d337e"
+					(reference "#PWR05105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/12baccda-de61-4ff2-89c1-cc980ff8bc59"
+					(reference "#PWR05105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/3a2fa2a6-4027-46c4-90cc-58cbe339a8cc"
+					(reference "#PWR05105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/60421d18-f918-422e-9acf-6291f4552ab2"
+					(reference "#PWR05105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/7ca7b9d9-dd96-40f5-80e5-151f81d53068"
+					(reference "#PWR05105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/82f3ee1c-c2d2-4617-a9e4-0cb55d40f270"
+					(reference "#PWR05105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cbe845e2-fbfa-4e99-b5aa-42ea773ed407"
+					(reference "#PWR05105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cfb92fbf-905c-43ce-8707-6acd4a04428b"
+					(reference "#PWR05105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/e8076ae0-d234-4675-a580-3fff14bf2f4c"
+					(reference "#PWR05105")
+					(unit 1)
+				)
+			)
+			(project "main_control"
+				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/c953f248-6ec6-4063-88a9-6cf78c9a3ffe"
+					(reference "#PWR0802")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:PMOS")
+		(at 96.52 54.61 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a33a58fa-e1e1-4acb-a073-b0812ff6fd92")
+		(property "Reference" "Q5105"
+			(at 102.87 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PMOS"
+			(at 102.87 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
+			(at 101.6 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 96.52 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "P-MOSFET transistor, drain/source/gate"
+			(at 96.52 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PMOS"
+			(at 96.52 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "MOS1"
+			(at 96.52 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 96.52 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ab0d3087-0828-4aeb-a121-baeeb78295e9")
+		)
+		(pin "1"
+			(uuid "da1ce207-4e69-48d9-a703-13d80cb91892")
+		)
+		(pin "2"
+			(uuid "80cd171b-f5f0-4b98-bd30-0c18770d88b4")
+		)
+		(instances
+			(project "add_sub"
+				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/96b80627-00a4-4943-acd8-0aaffb7584a8"
+					(reference "Q5105")
+					(unit 1)
+				)
+				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/dd8f2a91-442d-4910-8474-3896dc3f1a74"
+					(reference "Q4905")
+					(unit 1)
+				)
+			)
+			(project "led_panel_1"
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/218b1012-688b-456d-a002-99b870e3f91e"
+					(reference "Q1601")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/3cb5318d-7d11-4985-8b4f-10363e58439c"
+					(reference "Q2001")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/6fab1684-a99a-45a5-826c-4a0ab400ce58"
+					(reference "Q1401")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/73415f43-fa7c-48ee-a1db-027aad515fd0"
+					(reference "Q2201")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/7a20d938-50d3-45eb-aea5-29f66b15ee51"
+					(reference "Q1901")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/93785959-19e4-44ac-a78e-9c302e76d388"
+					(reference "Q1701")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/94efcb2c-3873-4c22-a4fe-03cfdeb86574"
+					(reference "Q1301")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/a227ac16-aa2d-4eb8-a04b-c2e86bd63208"
+					(reference "Q1201")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/a6eab0e8-ace3-4b1e-8fbf-bf8a9d91c04b"
+					(reference "Q2401")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/acc262c1-3630-4e23-9331-5954a0579a71"
+					(reference "Q1101")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/bddb133b-7bae-4891-a02a-0e40f83d1f98"
+					(reference "Q1501")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/cfc208ad-e112-4557-9d03-0d07473c97e3"
+					(reference "Q2101")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/ddc058e6-f3a0-4400-a1a6-ea0fde197af9"
+					(reference "Q2301")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/fa6b33b4-8985-4950-b03e-3451064fbf9b"
+					(reference "Q1801")
+					(unit 1)
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/99dbd45c-8760-4ff5-9139-add98e67407e"
+					(reference "Q3105")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/e9f53ae4-1679-4057-9ac8-fa20ef8d337e"
+					(reference "Q3905")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/12baccda-de61-4ff2-89c1-cc980ff8bc59"
+					(reference "Q2101")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/3a2fa2a6-4027-46c4-90cc-58cbe339a8cc"
+					(reference "Q2001")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/60421d18-f918-422e-9acf-6291f4552ab2"
+					(reference "Q1901")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/7ca7b9d9-dd96-40f5-80e5-151f81d53068"
+					(reference "Q2202")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/82f3ee1c-c2d2-4617-a9e4-0cb55d40f270"
+					(reference "Q2201")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cbe845e2-fbfa-4e99-b5aa-42ea773ed407"
+					(reference "Q2501")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cfb92fbf-905c-43ce-8707-6acd4a04428b"
+					(reference "Q2301")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/e8076ae0-d234-4675-a580-3fff14bf2f4c"
+					(reference "Q2401")
+					(unit 1)
+				)
+			)
+			(project "led_panel_2"
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/1979c8a0-cd4d-4f47-9aa5-f3a82bfb084e"
+					(reference "Q2101")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/363116f6-af4d-474a-82d5-664e26ce9439"
+					(reference "Q1201")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/3b05bd4b-0c58-4f24-a17b-e2a3ced789a7"
+					(reference "Q1801")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/671ad17b-f5f8-4b86-ac05-f7acfc1e1c2c"
+					(reference "Q301")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/786a2f8b-d0f4-4b2c-81fb-11eab9b6e626"
+					(reference "Q1901")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/7c0d05d8-e134-4120-8452-2dc1fcdd5141"
+					(reference "Q1001")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/82b2422f-7547-4e72-89b6-369052d7b3a9"
+					(reference "Q1601")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/8e94ed56-2852-4f97-8778-eb4e4ca74332"
+					(reference "Q801")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/b4621820-0c74-4aee-8c12-c13ae46d8656"
+					(reference "Q1401")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/be8fa8f1-c026-49e9-92bf-ada2da69f745"
+					(reference "Q901")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/cb2f7414-9e13-4d7b-94cb-e19f004e0de2"
+					(reference "Q1301")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/e37835ae-7ab6-48da-9b5b-ecbeac656232"
+					(reference "Q601")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/e7f89a61-4781-4cf6-a6c5-6b0050295fd5"
+					(reference "Q701")
+					(unit 1)
+				)
+			)
+			(project "add_sub"
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/99dbd45c-8760-4ff5-9139-add98e67407e"
+					(reference "Q5105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/e9f53ae4-1679-4057-9ac8-fa20ef8d337e"
+					(reference "Q5105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/12baccda-de61-4ff2-89c1-cc980ff8bc59"
+					(reference "Q5105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/3a2fa2a6-4027-46c4-90cc-58cbe339a8cc"
+					(reference "Q5105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/60421d18-f918-422e-9acf-6291f4552ab2"
+					(reference "Q5105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/7ca7b9d9-dd96-40f5-80e5-151f81d53068"
+					(reference "Q5105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/82f3ee1c-c2d2-4617-a9e4-0cb55d40f270"
+					(reference "Q5105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cbe845e2-fbfa-4e99-b5aa-42ea773ed407"
+					(reference "Q5105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cfb92fbf-905c-43ce-8707-6acd4a04428b"
+					(reference "Q5105")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/e8076ae0-d234-4675-a580-3fff14bf2f4c"
+					(reference "Q5105")
+					(unit 1)
+				)
+			)
+			(project "main_control"
+				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/c953f248-6ec6-4063-88a9-6cf78c9a3ffe"
+					(reference "Q801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 99.06 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5d171ba-85bc-49bf-87a3-5fc7b37c21ed")
+		(property "Reference" "#PWR05104"
+			(at 99.06 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 99.06 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 99.06 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b2ad614-a54c-4e99-9610-ff3554d16b6d")
+		)
+		(instances
+			(project "add_sub"
+				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/96b80627-00a4-4943-acd8-0aaffb7584a8"
+					(reference "#PWR05104")
+					(unit 1)
+				)
+				(path "/1a086df7-7508-4c0d-b696-2f052ea4c322/dd8f2a91-442d-4910-8474-3896dc3f1a74"
+					(reference "#PWR04904")
+					(unit 1)
+				)
+			)
+			(project "led_panel_1"
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/218b1012-688b-456d-a002-99b870e3f91e"
+					(reference "#PWR01601")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/3cb5318d-7d11-4985-8b4f-10363e58439c"
+					(reference "#PWR02001")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/6fab1684-a99a-45a5-826c-4a0ab400ce58"
+					(reference "#PWR01401")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/73415f43-fa7c-48ee-a1db-027aad515fd0"
+					(reference "#PWR02201")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/7a20d938-50d3-45eb-aea5-29f66b15ee51"
+					(reference "#PWR01901")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/93785959-19e4-44ac-a78e-9c302e76d388"
+					(reference "#PWR01701")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/94efcb2c-3873-4c22-a4fe-03cfdeb86574"
+					(reference "#PWR01301")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/a227ac16-aa2d-4eb8-a04b-c2e86bd63208"
+					(reference "#PWR01201")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/a6eab0e8-ace3-4b1e-8fbf-bf8a9d91c04b"
+					(reference "#PWR02401")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/acc262c1-3630-4e23-9331-5954a0579a71"
+					(reference "#PWR01101")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/bddb133b-7bae-4891-a02a-0e40f83d1f98"
+					(reference "#PWR01501")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/cfc208ad-e112-4557-9d03-0d07473c97e3"
+					(reference "#PWR02101")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/ddc058e6-f3a0-4400-a1a6-ea0fde197af9"
+					(reference "#PWR02301")
+					(unit 1)
+				)
+				(path "/6c707edb-260d-4b9d-bf13-59fca82df407/fa6b33b4-8985-4950-b03e-3451064fbf9b"
+					(reference "#PWR01801")
+					(unit 1)
+				)
+			)
+			(project "main_logic"
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/99dbd45c-8760-4ff5-9139-add98e67407e"
+					(reference "#PWR03103")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/e9f53ae4-1679-4057-9ac8-fa20ef8d337e"
+					(reference "#PWR03904")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/12baccda-de61-4ff2-89c1-cc980ff8bc59"
+					(reference "#PWR02107")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/3a2fa2a6-4027-46c4-90cc-58cbe339a8cc"
+					(reference "#PWR02001")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/60421d18-f918-422e-9acf-6291f4552ab2"
+					(reference "#PWR01915")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/7ca7b9d9-dd96-40f5-80e5-151f81d53068"
+					(reference "#PWR02202")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/82f3ee1c-c2d2-4617-a9e4-0cb55d40f270"
+					(reference "#PWR02201")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cbe845e2-fbfa-4e99-b5aa-42ea773ed407"
+					(reference "#PWR02507")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cfb92fbf-905c-43ce-8707-6acd4a04428b"
+					(reference "#PWR02301")
+					(unit 1)
+				)
+				(path "/9c59990f-2fe5-4da7-bc07-d03b445b1465/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/e8076ae0-d234-4675-a580-3fff14bf2f4c"
+					(reference "#PWR02401")
+					(unit 1)
+				)
+			)
+			(project "led_panel_2"
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/1979c8a0-cd4d-4f47-9aa5-f3a82bfb084e"
+					(reference "#PWR02101")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/363116f6-af4d-474a-82d5-664e26ce9439"
+					(reference "#PWR01201")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/3b05bd4b-0c58-4f24-a17b-e2a3ced789a7"
+					(reference "#PWR01801")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/671ad17b-f5f8-4b86-ac05-f7acfc1e1c2c"
+					(reference "#PWR0301")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/786a2f8b-d0f4-4b2c-81fb-11eab9b6e626"
+					(reference "#PWR01901")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/7c0d05d8-e134-4120-8452-2dc1fcdd5141"
+					(reference "#PWR01001")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/82b2422f-7547-4e72-89b6-369052d7b3a9"
+					(reference "#PWR01601")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/8e94ed56-2852-4f97-8778-eb4e4ca74332"
+					(reference "#PWR0801")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/b4621820-0c74-4aee-8c12-c13ae46d8656"
+					(reference "#PWR01401")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/be8fa8f1-c026-49e9-92bf-ada2da69f745"
+					(reference "#PWR0901")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/cb2f7414-9e13-4d7b-94cb-e19f004e0de2"
+					(reference "#PWR01301")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/e37835ae-7ab6-48da-9b5b-ecbeac656232"
+					(reference "#PWR0601")
+					(unit 1)
+				)
+				(path "/b7c37221-bd3b-497a-9a77-e788e57ec817/e7f89a61-4781-4cf6-a6c5-6b0050295fd5"
+					(reference "#PWR0701")
+					(unit 1)
+				)
+			)
+			(project "add_sub"
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/99dbd45c-8760-4ff5-9139-add98e67407e"
+					(reference "#PWR05104")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/e9f53ae4-1679-4057-9ac8-fa20ef8d337e"
+					(reference "#PWR05104")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/12baccda-de61-4ff2-89c1-cc980ff8bc59"
+					(reference "#PWR05104")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/3a2fa2a6-4027-46c4-90cc-58cbe339a8cc"
+					(reference "#PWR05104")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/60421d18-f918-422e-9acf-6291f4552ab2"
+					(reference "#PWR05104")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/7ca7b9d9-dd96-40f5-80e5-151f81d53068"
+					(reference "#PWR05104")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/82f3ee1c-c2d2-4617-a9e4-0cb55d40f270"
+					(reference "#PWR05104")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cbe845e2-fbfa-4e99-b5aa-42ea773ed407"
+					(reference "#PWR05104")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/cfb92fbf-905c-43ce-8707-6acd4a04428b"
+					(reference "#PWR05104")
+					(unit 1)
+				)
+				(path "/ccba897c-0afe-4800-bf6c-6f198831a830/30f0feea-95cb-4a2f-aac1-eea6203246c2/724c0b0c-29d0-4c6a-be9f-fdb8b4c646fb/e8076ae0-d234-4675-a580-3fff14bf2f4c"
+					(reference "#PWR05104")
+					(unit 1)
+				)
+			)
+			(project "main_control"
+				(path "/e2bb65ff-e340-4712-a878-121a5433abf0/c953f248-6ec6-4063-88a9-6cf78c9a3ffe"
+					(reference "#PWR0801")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
