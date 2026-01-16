@@ -90,3 +90,4 @@ results/test_results.json
 # Large video files (>100MB)
 media/videos/demos/main-demo-logism-evolution-all-opcodes.mp4
 media/videos/process/kicad-8bit-nor-and spice simulation.mp4
+media/videos/process/sim_ngspice_nor_kicad.mp4
